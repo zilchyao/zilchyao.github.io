@@ -2,13 +2,13 @@
 
 Hydeout updates the original [Hyde](https://github.com/poole/hyde)
 theme for [Jekyll](http://jekyllrb.com) 3.x and 4.x and adds new functionality.<br>
-Hydeout 是一个适用于 Jeklyy 3.x 和 4.x  的主题样式，已更新并添辑一些新的功能
+Hydeout 是一个适用于 Jeklyy 3.x 和 4.x  的主题样式，已更新并添加了一些新的功能
 
 ![Desktop](/_screenshots/1.png?raw=true)
 <img alt="Mobile home page" src="/_screenshots/2.png?raw=true" width="300px" />
 <img alt="Mobile post page" src="/_screenshots/3.png?raw=true" width="300px" />
 
-### Usage 用法
+### Usage <br> 用法
 
 Hydeout is available as the `jekyll-theme-hydeout` Ruby Gem.
 Add `gem "jekyll-theme-hydeout", "~> 4.1"` to your Gemfile and run
@@ -30,8 +30,7 @@ instructions for more details.](https://help.github.com/articles/adding-a-jekyll
 
 Hydeout uses pagination, so if you have an `index.md`, you'll need to swap
 it with an `index.html` that uses the `index` layout:<br>
-Hydeout 使用分页，因此如果你有一个 `index.md`，你需要将它与一个 `index.md`交换。
-index.html"，使用如下 "index "布局：
+Hydeout 使用分页组件，因此如果你有一个 `index.md`，你需要将它替换成 ` index.html ` 并使用 "index" 布局：
 
 ```
 ---
@@ -45,26 +44,27 @@ to include per page (e.g. `paginate: 5`).<br>
 你还需要在 `_config.yml` 中添加一个设置，告诉 Jekyll 每页要包含多少篇文章（例如`paginate: 5`）。
 
 
-### Keep It Simple 保持简单
+### Keep It Simple <br> 保持简单
 
 In keeping with the original Hyde theme, Hydeout aims to keep the overall
 design lightweight and plugin-free. JavaScript is currently limited only
 to Disqus and Google Analytics (and is only loaded if you provide configuration
 variables).
-<br>为了与最初的 Hyde 主题保持一致，Hydeout 致力于保持整体轻量级和无插件设计。
-JavaScript 目前仅限于仅限于 Disqus 和 Google Analytics（只有在提供配置变量的情况下才会加载变量）。
+<br>
+为了与最初的 Hyde 主题保持一致，Hydeout 致力于保持整体轻量级和无插件设计。
+JavaScript 目前仅限于用于 Disqus（一个好用的博客评论平台） 和 Google Analytics（只有在提供配置变量的情况下才会加载变量）。
 
 Hydeout makes heavy use of Flexbox in its CSS. If Flexbox is not available,
 the CSS degrades into a single column layout.<br>
 Hydeout 在 CSS 中大量使用了 Flexbox（弹性盒子布局）。如果没有 Flexbox ，CSS 就会退化为单列布局。
 
 
-### Customization 定制
+### Customization <br> 定制
 
 Hydeout replaces Hyde's class-based theming with the use
 of the following SASS variables:<br>
 Hydeout 使用以下 SASS 变量取代了 Hyde 基于类的主题设计
-以下 SASS 变量：
+
 
 ```scss
 $sidebar-bg-color: #202020 !default;
@@ -99,6 +99,7 @@ you can override.
 
 You can see the full set of partials you can replace in the
 [`_includes`](_includes) folder, but there are a few worth noting:
+<br>
 你可以在(_includes)文件夹中查看可以替换的全部变量，但有几个值得注意：
 
 
@@ -111,7 +112,8 @@ You can see the full set of partials you can replace in the
   插入你的自定义标题标签（例如：加载你自己的样式表）
 
 * `_includes/custom-foot.html` - Insert custom elements at the end of the
-  body (e.g. for custom JS)在 body 末尾插入自定义元素（例如：自定义的 JS 代码）
+  body (e.g. for custom JS)<br>
+  在 body 末尾插入自定义元素（例如：自定义的 JS 代码）
 
 * `_includes/custom-nav-links.html` - Additional nav links to insert at the
   end of the list of links in the sidebar.<br>
@@ -142,7 +144,7 @@ You can see the full set of partials you can replace in the
   同时删除此处的字体加载引用。
 
 
-### New Features 新特性
+### New Features <br> 新特性
 
 * Hydeout adds a new tags page (accessible in the sidebar). Just create a
   new page with the tags layout:，<br>
@@ -158,8 +160,9 @@ You can see the full set of partials you can replace in the
 * Hydeout adds a new "category" layout for dedicated category pages.
   Category pages are automatically added to the sidebar. All other pages
   must have `sidebar_link: true` in their front matter to show up in
-  the sidebar. To create a category page, use the `category` layout"<br>
-  Hydeout 为专门的分类页面添加了新的 "ctegory"布局。分类页面会自动添加到侧边栏。
+  the sidebar. To create a category page, use the `category` layout"
+  <br>
+  Hydeout 为专门的分类页面添加了新的 "ctegory" 布局。分类页面会自动添加到侧边栏。
   所有其他页面必须在其 前言部分（front matter）使用 `sidebar_link: true` 才能显示在侧边栏中。
   要创建分类页面，请使用 `category` 布局"
 
@@ -176,13 +179,11 @@ You can see the full set of partials you can replace in the
   parameter in the front matter. This works for both category and non-category
   pages, although non-category pages will always come first. Take a look at
   [`_includes/sidebar-nav-links.html`](./_includes/sidebar-nav-links.html) if
-  you want to customize this behavior.
+  you want to customize this behavior.<br>
   您可以在 前言部分（front matter）中写上 `sidebar_sort_order` 参数来控制页面的排序方式。
   这对 分类 和 非分类 页面都有效，但 非类别 页面 总是排在前面。如果你想自定义这些行为可参考链接
  
   
-
-
   ```
   ---
   layout: page
