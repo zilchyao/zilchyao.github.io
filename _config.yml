@@ -3,15 +3,15 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Hydeout
-tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
+title:            '智能交易*姚的 GitHub 首页'
+tagline:          '基于  Jekyll 的主题 Hydeout'
+description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.<br>Jekyll 的主题 Hydeout 已更新。'
 url:              https://fongandrew.github.io
 baseurl:          '/'
-                  # the optional subpath of your site, e.g. "/blog"
-                  # NB: This applies to all pages in your Jekyll site.
-                  # If you want to move just the blog index pages but keep
-                  # other pages at root, see the paginate_path and
+                  # the optional subpath of your site, e.g. "/blog" 网站的可选子路径，例如 "/blog"
+                  # NB: This applies to all pages in your Jekyll site. 注意：这适用于 Jekyll 网站中的所有页面。
+                  # If you want to move just the blog index pages but keep 如果你只想移动博客索引页面，
+                  # other pages at root, see the paginate_path and 而其他页面不动，请参考下面的 paginate_path
                   # sidebar_blog_link below.
 
 author:
@@ -20,16 +20,16 @@ author:
 
 paginate:         5
 # paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
+                    # Or '/blog/page:num' if you want to move your index pages 如果你想移动你的首页
 
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
 
-# Sidebar link settings
+# Sidebar link settings 侧边栏链接设置
 sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
+# sidebar_blog_link:  '/blog'   # By default, your home page is your blog 默认情况下，你的主页就是你的博客页
+                                # page. If you change your paginate_path, 如果你改变了 paginate_pth
+                                # set this to the root of the paginate_path 设置为  paginate_pth 的根目录
+                                # to enable a separate blog link. 以启用单独的博客链接
