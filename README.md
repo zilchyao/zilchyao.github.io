@@ -93,7 +93,7 @@ $sidebar-sticky: false;
 ```
 
 See the [_variables](_sass/hydeout/_variables.scss) file for other variables
-you can override.
+you can override.<br>
 有关可以覆盖的其它变量，请参考链接。
 
 
