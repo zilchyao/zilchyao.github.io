@@ -3,9 +3,9 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            '智能交易*姚的 GitHub 首页'
+title:            '智能交易*姚'
 tagline:          '基于  Jekyll 的主题 Hydeout'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.<br>Jekyll 的主题 Hydeout 已更新。'
+description:      '<a href="http://jekyllrb.com" target="_blank">Jekyll</a> 的主题<a href="http://hyde.getpoole.com" target="_blank"> Hydeout</a>  已更新。'
 url:              https://fongandrew.github.io
 baseurl:          '/'
                   # the optional subpath of your site, e.g. "/blog" 网站的可选子路径，例如 "/blog"
