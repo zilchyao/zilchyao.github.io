@@ -2,20 +2,30 @@
 
 Hydeout updates the original [Hyde](https://github.com/poole/hyde)
 theme for [Jekyll](http://jekyllrb.com) 3.x and 4.x and adds new functionality.
+Hydeout 是一个适用于 Jeklyy 3.x 和 4.x  的主题样式，已更新并添辑一些新的功能
 
 ![Desktop](/_screenshots/1.png?raw=true)
 <img alt="Mobile home page" src="/_screenshots/2.png?raw=true" width="300px" />
 <img alt="Mobile post page" src="/_screenshots/3.png?raw=true" width="300px" />
 
-### Usage
+### Usage 用法
 
 Hydeout is available as the `jekyll-theme-hydeout` Ruby Gem.
 Add `gem "jekyll-theme-hydeout", "~> 4.1"` to your Gemfile and run
 `bundle install`.
+Hydeout 可作为 Ruby gem 使用，名称为 `jekyll-theme-hydeout` 。
+（Ruby 是一种开源的面向对象程序设计的服务器端脚本语言，gem 是 Ruby 的包管理器。
+类似 Python 的 pip ， Node.js 的 npm ）
+将 `gem "jekyll-theme-hydeout", "~> 4.1"` 添加到你的 gemfile 并运行
+` bundle install ` 指令
 
 If you're installing on Github pages, you may also have to add
 `remote_theme: fongandrew/hydeout` to your `_config.yml`. [See the Github
 instructions for more details.](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)
+如果在 Github 页面上安装，可能还需要在你的  `_config.yml` 中添加下列一行代码
+`remote_theme: fongandrew/hydeout`
+更详细的信息请参数链接
+
 
 Hydeout uses pagination, so if you have an `index.md`, you'll need to swap
 it with an `index.html` that uses the `index` layout:
