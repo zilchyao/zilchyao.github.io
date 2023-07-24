@@ -17,7 +17,8 @@ variables).<br>
 为了与最初的 Hyde 主题保持一致，Hydeout 致力于保持整体轻量级和无插件设计。 JavaScript 目前仅限于用于 Disqus（一个好用的博客评论平台） 和 Google Analytics（只有在提供配置变量的情况下才会加载变量）。
 
 Hydeout makes heavy use of Flexbox in its CSS. If Flexbox is not available,
-the CSS degrades into a single column layout.
+the CSS degrades into a single column layout.<br>
+Hydeout 在 CSS 中大量使用了 Flexbox（浮动的盒模型）。如果没有 Flexbox CSS 就会退化为单列布局。
 
 ### Customization <br>定制
 
