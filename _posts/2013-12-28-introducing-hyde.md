@@ -3,7 +3,7 @@ layout: post
 title: Introducing Hyde
 ---
 
-Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.<br>
 Hyde 是一款铜色的双栏 Jekyll 主题，它将突出的侧边栏与简洁的内容搭配在一起。它的原型是 Jekyll 管家 Poole。
 
 
@@ -42,7 +42,7 @@ Hyde 基于 Poole 添加了一些新的特性如下：
 * 八种可选配色方案，可通过`<body>`类使用
 
 
-[Head to the readme](https://github.com/poole/hyde#readme) to learn more.
+[Head to the readme](https://github.com/poole/hyde#readme) to learn more.<br>
 请访问链接了解更多信息。
 
 ### Browser support <br> 浏览器支持
@@ -53,7 +53,7 @@ Hyde 是一个具有前瞻性的项目。除了最新版本的 Chrome 浏览器�
 
 ### Download <br>下载
 
-Hyde is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/hyde">GitHub repository</a> for downloads, bug reports, and features requests.
+Hyde is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/hyde">GitHub repository</a> for downloads, bug reports, and features requests.<br>
 Hyde 托管在 GitHub 上， 请访问链接获取下载、错误报告和功能请求。
 
 Thanks!
