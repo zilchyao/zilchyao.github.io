@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Markup: HTML Elements and Formatting"
-sub_title: "The common elements"
+title: "Markup: HTML Elements and Formatting<br>标记：HTML 元素和格式"
+sub_title: "The common elements<br>通用元素"
 categories:
   - Markup
 elements:
@@ -13,34 +13,39 @@ elements:
 last_modified_at: 2017-03-09T10:55:59-05:00
 ---
 
-A variety of common HTML elements to demonstrate the theme's stylesheet and verify they have been styled appropriately.
+A variety of common HTML elements to demonstrate the theme's stylesheet and verify they have been styled appropriately.<br>
+各种常见的 HTML 元素，用于演示主题的样式表，并验证它们的样式是否恰当。
 
-# Header one
+# Header one 一级标题
 
-## Header two
+## Header two 二级标题
 
-### Header three
+### Header three 三级标题
 
-#### Header four
+#### Header four 四级标题
 
-##### Header five
+##### Header five 五级标题
 
-###### Header six
+###### Header six 六级标题
 
 ## Blockquotes
+<br> 引用块
 
 Single line blockquote:
+<br>单行引用
 
 > Stay hungry. Stay foolish.
 
 Multi line blockquote with a cite reference:
+<br>多行引用标签 cite 通常表示对某个参考文献的引用，比如书籍或者杂志的标题。
 
-> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.
+> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.<br>
+人们认为，专注意味着对你必须专注的事情说 "是"。但根本不是这个意思。它意味着对其他上百个好主意说 "不"。你必须仔细挑选。实际上，我为我们没有做过的事情和我做过的事情感到骄傲。创新就是对一千件事说 "不"。
 
-<cite>Steve Jobs</cite> --- Apple Worldwide Developers' Conference, 1997
+<cite>Steve Jobs 史蒂夫 乔布斯</cite> --- Apple Worldwide Developers' Conference,苹果全球开发者大会 1997
 {: .small}
 
-## Tables
+## Tables <br> 表格
 
 | Employee         | Salary |                                                              |
 | --------         | ------ | ------------------------------------------------------------ |
@@ -59,7 +64,7 @@ Multi line blockquote with a cite reference:
 |=============================|
 | Foot1   | Foot2   | Foot3   |
 
-## Definition Lists
+## Definition Lists <br> 定义列表
 
 Definition List Title
 : Definition list division.
