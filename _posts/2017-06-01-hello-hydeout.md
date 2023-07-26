@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello Hydeout
+title: Hello Hydeout<br>你好，Hydeout
 excerpt_separator:  <!--more-->
 ---
 
