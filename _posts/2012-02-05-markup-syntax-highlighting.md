@@ -1,7 +1,7 @@
 ---
-title: "Markup: Syntax Highlighting"
+title: "Markup: Syntax Highlighting<br>标记：语法高亮"
 layout: post
-excerpt: "Post displaying the various ways one can highlight code blocks with Jekyll. Some options include standard Markdown, GitHub Flavored Markdown, and Jekyll's `{% highlight %}` tag."
+excerpt: "Post displaying the various ways one can highlight code blocks with Jekyll. Some options include standard Markdown, GitHub Flavored Markdown, and Jekyll's `{% highlight %}` tag.<br>此帖子展示了使用 Jekyll 高亮代码块的各种方法。其中包括标准 Markdown、GFM(GitHub Flavored Markdown) 和 Jekyll 的 `{% highlight %}` 标签。"
 
 last_modified_at: 2012-02-05T10:27:01-05:00
 tags:
