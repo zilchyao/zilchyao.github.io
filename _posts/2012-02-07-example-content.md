@@ -19,19 +19,19 @@ Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, na
 普通的正文内容<br>
 Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
-## Inline HTML elements<内联 HTML 元素>
+## Inline HTML elements<br>内联 HTML 元素
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).<br>
 HTML 定义了一长串可用的内联标记，请参考链接以了解更详细的信息。
 
 
 - **To bold text**, use `<strong>`. <br>加粗标签
 - *To italicize text*, use `<em>`. <br>斜体标签
 - Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.<br>
-缩略语，如上面的 HTML 就是一个缩略语，使用的标签是 ` <abbr> `，并为完整短语添加可选的 ` title ` 属性。
-- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.<br>引用，如上面的 Mark otto 用到的标签就是 ` <cite> `。
+缩略语，如上面的 HTML 就是一个缩略语，使用的标签是 `<abbr>`，并为完整短语添加可选的 `title` 属性。
+- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.<br>引用，如上面的 Mark otto 用到的标签就是 `<cite>`。
 - <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.<br>删除线的标签是 `<del>`，插入的标签是 `<ins>`。
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.<br>上标和下标的标签，分别是 ` <sup> ` 和 ` <sub> `。
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.<br>上标和下标的标签，分别是 `<sup>` 和 `<sub>`。
  
 Most of these elements are styled by browsers with few modifications on our part.<br>
 这些元素大多由浏览器设置样式，我们只需进行少量修改即可。
