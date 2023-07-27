@@ -66,19 +66,19 @@ Multi line blockquote with a cite reference:
 
 ## Definition Lists <br> 定义列表
 
-Definition List Title
-: Definition list division.
+Definition List Title 定义表头标题
+: Definition list division. 定义单元格
 
-Startup
-: A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
+Startup 创业
+: A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.<br>创业公司或初创企业是指旨在寻找可重复、可扩展商业模式的公司或临时组织。
 
-#dowork
-: Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
+#dowork 工作
+: Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.<br>由罗布-迪尔代克和他的贴身保镖克里斯托弗-"大黑"-博伊金斯共同提出的 "干得漂亮"，既可以激励自己，也可以激励朋友。
 
-Do It Live
-: I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
+Do It Live 直播
+: I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.<br>我会让比尔-奥赖利 解释 "我们直播" 这个问题。
 
-## Unordered Lists (Nested)
+## Unordered Lists (Nested)<br>无序列表（嵌套）
 
   * List item one
       * List item one
@@ -93,7 +93,7 @@ Do It Live
   * List item three
   * List item four
 
-## Ordered List (Nested)
+## Ordered List (Nested)<br>有序列表（嵌套）
 
   1. List item one
       1. List item one
@@ -108,49 +108,59 @@ Do It Live
   3. List item three
   4. List item four
 
-## Address element
+## Address element 地址元素
 
 <address>
   1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
 </address>
 
-## Anchor element (aka. Link)
+## Anchor element (aka. Link)<br> 锚元素（又称链接）
 
-This is an example of a [link](http://apple.com "Apple").
+This is an example of a [link](http://apple.com "Apple").<br>
+这是个链接的例子。
 
-## Abbreviation element
+## Abbreviation element<br>缩写元素
 
-The abbreviation CSS stands for "Cascading Style Sheets".
+The abbreviation CSS stands for "Cascading Style Sheets".<br>
+CSS 是 "层叠样式表 "的缩写。
 
 *[CSS]: Cascading Style Sheets
 
-## Cite element
+## Cite element<br>引用元素
 
 "Code is poetry." ---<cite>Automattic</cite>
+“代码如诗” ———— 自动化
 
-## Code element
+## Code element<br>代码元素
 
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
+You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.<br>
+在稍后的测试中，您将了解到 "word-wrap: break-word; "将是您最好的朋友。
 
-## Strike element
 
-This element will let you <strike>strikeout text</strike>.
+## Strike element <br> 删除线元素
 
-## Emphasize element
+This element will let you <strike>strikeout text</strike>.<br>
+这个元素让你显示删除线
 
-The emphasize element should _italicize_ text.
+## Emphasize element <br> 强调元素
 
-## Insert element
+The emphasize element should _italicize_ text.<br>
+强调元素使文本大写。
 
-This element should denote <ins>inserted</ins> text.
+## Insert element<br>插入元素
 
-## Keyboard element
+This element should denote <ins>inserted</ins> text.<br>
+该元素应表示<ins>插入</ins>文本。
 
-This scarcely known element emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` element.
+## Keyboard element<br>键盘元素
 
-## Preformatted element
+This scarcely known element emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` element.<br>
+这个鲜为人知的元素模拟键盘文本，其样式通常与 `<code>` 元素相似。
 
-This element styles large blocks of code.
+## Preformatted element<br>预格式化元素
+
+This element styles large blocks of code.<br>
+该元素为大型 代码块 设置样式。
 
 <pre>
 .post-title {
@@ -162,22 +172,26 @@ This element styles large blocks of code.
 }
 </pre>
 
-## Quote element
+## Quote element <br> 引用元素
 
 <q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
 
-## Strong element
+## Strong element <br> 加粗元素
 
-This element shows **bold text**.
+This element shows **bold text**.<br>
+这个元素会显示加粗效果
 
-## Subscript element
+## Subscript element<br>下标元素
 
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
+Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.<br>
+这样就可以表现科学样式，这样就能把 2 设为下标。
 
-## Superscript element
+## Superscript element<br>上标元素
 
 Still sticking with science and Einstein's E = MC<sup>2</sup>, which should lift the 2 up.
+还是坚持科学和爱因斯坦的公式，这样就可以把 2 设为上标。
 
-## Variable element
+## Variable element <br> 变量元素
 
-This allows you to denote <var>variables</var>.
+This allows you to denote <var>variables</var>.<br>
+这样你就可以表示变量
