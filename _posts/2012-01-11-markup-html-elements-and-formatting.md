@@ -128,7 +128,7 @@ CSS 是 "层叠样式表 "的缩写。
 
 ## Cite element<br>引用元素
 
-"Code is poetry." ---<cite>Automattic</cite>
+"Code is poetry." ---<cite>Automattic</cite><br>
 “代码如诗” ———— 自动化
 
 ## Code element<br>代码元素
@@ -188,7 +188,7 @@ Getting our science styling on with H<sub>2</sub>O, which should push the "2" do
 
 ## Superscript element<br>上标元素
 
-Still sticking with science and Einstein's E = MC<sup>2</sup>, which should lift the 2 up.
+Still sticking with science and Einstein's E = MC<sup>2</sup>, which should lift the 2 up.<br>
 还是坚持科学和爱因斯坦的公式，这样就可以把 2 设为上标。
 
 ## Variable element <br> 变量元素
