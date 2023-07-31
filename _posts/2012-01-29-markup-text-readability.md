@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Markup: Text Readability Test"
-excerpt: "A large amount of sample text to test readability of a text heavy page.<br>标记： 文本可读性测试"
+excerpt: "A large amount of sample text to test readability of a text heavy page.<br>
+标记： 文本可读性测试"
 categories:
   - Markup
 tags:
