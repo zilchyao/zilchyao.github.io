@@ -12,7 +12,7 @@ last_modified_at: 2012-02-03T12:32:16-05:00
 ---
 
 This is the post content. Archive-index pages should display an [auto-generated excerpt](https://jekyllrb.com/docs/posts/#post-excerpts) of all the content preceding the `excerpt_separator`, as defined in the YAML Front Matter or globally in `_config.yml`.<br>
-这是帖子内容。存档索引页面会按照 YAML 前言（Front Matter） 或 `_config.yml`中的全局定义，显示参数 `excerpt_separator` 指定的分隔字符串前面的所有内容作为[自动生成摘录]，有关详细信息可参考链接。
+这是帖子中的内容。存档索引页面会按照 YAML 前言（Front Matter） 或 `_config.yml`中的全局定义，显示参数 `excerpt_separator` 指定的分隔字符串前面的所有内容作为[自动生成摘录]，有关详细信息可参考链接。
 
 
 Be sure to test the formatting of the auto-generated excerpt, to ensure that it doesn't create any layout problems.<br>
