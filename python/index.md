@@ -2,7 +2,7 @@
 layout: post
 title: "Python基础文档"
 categories:
-  - Markup
+  - Python
 last_modified_at: 2023-07-29T12:25:10-05:00
 ---
 
