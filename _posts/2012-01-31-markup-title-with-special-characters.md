@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Markup: Title with Special&nbsp;---&nbsp;Characters"
+title: "Markup: Title with Special&nbsp;---&nbsp;Characters<br>标记：特殊字符"
 categories:
   - Markup
 tags:
@@ -11,18 +11,20 @@ tags:
 last_modified_at: 2012-01-31T12:23:27-05:00
 ---
 
-Putting special characters in the title should have no adverse effect on the layout or functionality.
+Putting special characters in the title should have no adverse effect on the layout or functionality.<br>
+在标题中加入特殊字符不会对版面设计或功能产生不利影响。
 
-The title above has none-breaking spaces before and after the m-dash.
+The title above has none-breaking spaces before and after the m-dash.<br>
+上面的标题在 虚线 前后都有 空格。
 
 ```markdown
 &nbsp;---&nbsp;
 ```
 
-## Latin Character Tests
+## Latin Character Tests<br>拉丁字符测试
 
-This is a test to see if the fonts used in this theme support basic Latin characters.
-
+This is a test to see if the fonts used in this theme support basic Latin characters.<br>
+这是对本主题中使用的字体是否支持基本拉丁字符的测试。
 <table>
   <tr>
     <td>
