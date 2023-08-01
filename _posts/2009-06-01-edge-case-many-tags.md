@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Edge Case: Many Tags"
+title: "Edge Case: Many Tags<br>小问题：太多的标签"
 categories:
   - Edge Case
 tags:
@@ -47,4 +47,5 @@ tags:
   - YouTube
 ---
 
-This post has many tags.
+This post has many tags.<br>
+这个帖子拥有太多标签了。
