@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Edge Case: No Body Content"
-excerpt: "This post has no body content and should be blank on the post's page."
+title: "Edge Case: No Body Content<br>小问题：没有正文内容"
+excerpt: "This post has no body content and should be blank on the post's page.<br>这个帖子没有正文内容，帖子页面上会显示空白"
 categories:
   - Edge Case
 tags:
