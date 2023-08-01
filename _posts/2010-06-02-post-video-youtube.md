@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Post: Video (YouTube)<br>发帖：视频内容（YouTube）"
+title: "Post: Video (YouTube)<br>发帖：视频内容"
 categories:
   - Post Formats
 tags:
