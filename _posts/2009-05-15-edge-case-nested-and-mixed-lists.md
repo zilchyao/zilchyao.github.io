@@ -16,8 +16,7 @@ Nested and mixed lists are an interesting beast. It's a corner case to make sure
 嵌套列表 和 混合列表是一种有趣的怪兽。要确保列表中的列表不会破坏有序列表的编号顺序，并且列表样式足够深入，这是一个棘手的问题。
 
 
-## Ordered -- Unordered -- Ordered<br>
-有编号 -- 无编号 -- 有编号
+## Ordered -- Unordered -- Ordered<br>有编号 -- 无编号 -- 有编号
 
 1. ordered item
 2. ordered item
@@ -28,8 +27,7 @@ Nested and mixed lists are an interesting beast. It's a corner case to make sure
 3. ordered item
 4. ordered item
 
-## Ordered -- Unordered -- Unordered<br>
-有编号 -- 无编号 -- 无编号
+## Ordered -- Unordered -- Unordered<br>有编号 -- 无编号 -- 无编号
 
 1. ordered item
 2. ordered item
@@ -40,8 +38,7 @@ Nested and mixed lists are an interesting beast. It's a corner case to make sure
 3. ordered item
 4. ordered item
 
-## Unordered -- Ordered -- Unordered<br>
-无编号 -- 有编号 -- 无编号
+## Unordered -- Ordered -- Unordered<br>无编号 -- 有编号 -- 无编号
 
 * unordered item
 * unordered item
@@ -52,8 +49,7 @@ Nested and mixed lists are an interesting beast. It's a corner case to make sure
 * unordered item
 * unordered item
 
-## Unordered -- Unordered -- Ordered<br>
-无编号 -- 无编号 -- 有编号
+## Unordered -- Unordered -- Ordered<br>无编号 -- 无编号 -- 有编号
 
 * unordered item
 * unordered item
