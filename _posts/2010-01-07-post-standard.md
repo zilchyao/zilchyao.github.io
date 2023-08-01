@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Post: Standard<br>发布：标准格式"
+title: "Post: Standard<br>发帖：标准格式"
 excerpt_separator: "<!--more-->"
 categories:
   - Post Formats
