@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>智能交易*姚 文档站</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/mql5yao/favicon.ico">
+    <meta name="description" content="这是智能交易的文档站点。">
+    <meta name="keywords" content="MQL,EA,智能交易,自动交易,量化,编程,培训">
+    
+    <link rel="preload" href="/mql5yao/assets/css/0.styles.c167a2d0.css" as="style"><link rel="preload" href="/mql5yao/assets/js/app.f23448f4.js" as="script"><link rel="preload" href="/mql5yao/assets/js/3.a8269cb7.js" as="script"><link rel="preload" href="/mql5yao/assets/js/28.b5c9f3ea.js" as="script"><link rel="prefetch" href="/mql5yao/assets/js/10.a59489eb.js"><link rel="prefetch" href="/mql5yao/assets/js/11.1fde020f.js"><link rel="prefetch" href="/mql5yao/assets/js/12.a5634cbb.js"><link rel="prefetch" href="/mql5yao/assets/js/13.1e1b93d8.js"><link rel="prefetch" href="/mql5yao/assets/js/14.17d955a5.js"><link rel="prefetch" href="/mql5yao/assets/js/15.429599a3.js"><link rel="prefetch" href="/mql5yao/assets/js/16.bcf982ab.js"><link rel="prefetch" href="/mql5yao/assets/js/17.76fde0dd.js"><link rel="prefetch" href="/mql5yao/assets/js/18.49626d28.js"><link rel="prefetch" href="/mql5yao/assets/js/19.0f21f003.js"><link rel="prefetch" href="/mql5yao/assets/js/2.45a03fa6.js"><link rel="prefetch" href="/mql5yao/assets/js/20.18311061.js"><link rel="prefetch" href="/mql5yao/assets/js/21.63b34e06.js"><link rel="prefetch" href="/mql5yao/assets/js/22.a49527a7.js"><link rel="prefetch" href="/mql5yao/assets/js/23.2584759c.js"><link rel="prefetch" href="/mql5yao/assets/js/24.05b32517.js"><link rel="prefetch" href="/mql5yao/assets/js/25.991ff096.js"><link rel="prefetch" href="/mql5yao/assets/js/26.07e08c10.js"><link rel="prefetch" href="/mql5yao/assets/js/27.11150f9e.js"><link rel="prefetch" href="/mql5yao/assets/js/29.a1ad142f.js"><link rel="prefetch" href="/mql5yao/assets/js/30.6da01d3d.js"><link rel="prefetch" href="/mql5yao/assets/js/31.28fa5dac.js"><link rel="prefetch" href="/mql5yao/assets/js/32.46aab1c1.js"><link rel="prefetch" href="/mql5yao/assets/js/33.f178c7a3.js"><link rel="prefetch" href="/mql5yao/assets/js/34.cd1eae3b.js"><link rel="prefetch" href="/mql5yao/assets/js/35.ee55e50b.js"><link rel="prefetch" href="/mql5yao/assets/js/36.56370362.js"><link rel="prefetch" href="/mql5yao/assets/js/37.2cc5b283.js"><link rel="prefetch" href="/mql5yao/assets/js/38.c3bba64a.js"><link rel="prefetch" href="/mql5yao/assets/js/39.86103eac.js"><link rel="prefetch" href="/mql5yao/assets/js/4.ffd96de7.js"><link rel="prefetch" href="/mql5yao/assets/js/40.0e36f079.js"><link rel="prefetch" href="/mql5yao/assets/js/41.17bccbf6.js"><link rel="prefetch" href="/mql5yao/assets/js/42.a40ca8ac.js"><link rel="prefetch" href="/mql5yao/assets/js/43.5a883397.js"><link rel="prefetch" href="/mql5yao/assets/js/44.19bdddfe.js"><link rel="prefetch" href="/mql5yao/assets/js/45.dec8257c.js"><link rel="prefetch" href="/mql5yao/assets/js/46.ed29615c.js"><link rel="prefetch" href="/mql5yao/assets/js/47.b6d07db1.js"><link rel="prefetch" href="/mql5yao/assets/js/48.d7ca24ca.js"><link rel="prefetch" href="/mql5yao/assets/js/5.47d44717.js"><link rel="prefetch" href="/mql5yao/assets/js/6.1f5c1ae1.js"><link rel="prefetch" href="/mql5yao/assets/js/7.1a679445.js"><link rel="prefetch" href="/mql5yao/assets/js/8.e80e8a9d.js"><link rel="prefetch" href="/mql5yao/assets/js/9.261aef18.js">
+    <link rel="stylesheet" href="/mql5yao/assets/css/0.styles.c167a2d0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mql5yao/" class="home-link router-link-active"><img src="/mql5yao/logo.png" alt="智能交易*姚 文档站" class="logo"> <span class="site-name can-hide">智能交易*姚 文档站</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mql5yao/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/mql5yao/Chapter/start.html" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/mql5yao/Cutleeks/" class="nav-link">
+  割韭菜XX招
+</a></div><div class="nav-item"><a href="/mql5yao/support/" class="nav-link">
+  支持本站
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mql5yao/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/mql5yao/Chapter/start.html" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/mql5yao/Cutleeks/" class="nav-link">
+  割韭菜XX招
+</a></div><div class="nav-item"><a href="/mql5yao/support/" class="nav-link">
+  支持本站
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>MQL5线上手册</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mql5yao/Chapter/start.html" class="sidebar-link">MQL5 参考</a></li><li><a href="/mql5yao/Chapter/one.html" class="sidebar-link">01 第一章 语言基础</a></li><li><a href="/mql5yao/Chapter/two.html" class="sidebar-link">02 第二章 标准常量，列举和架构</a></li><li><a href="/mql5yao/Chapter/three.html" class="sidebar-link">03 第三章 MQL5程序</a></li><li><a href="/mql5yao/Chapter/four.html" class="sidebar-link">04 第四章 预定义变量</a></li><li><a href="/mql5yao/Chapter/five.html" class="sidebar-link">05 第五章 普通函数</a></li><li><a href="/mql5yao/Chapter/six.html" class="sidebar-link">06 第六章 数组函数</a></li><li><a href="/mql5yao/Chapter/add1.html" class="sidebar-link">07 第add1章 矩阵和向量方法</a></li><li><a href="/mql5yao/Chapter/seven.html" class="sidebar-link">07 第七章 函数转换</a></li><li><a href="/mql5yao/Chapter/eight.html" class="sidebar-link">08 第八章 数学函数</a></li><li><a href="/mql5yao/Chapter/nine.html" class="sidebar-link">09 第九章 字符串函数</a></li><li><a href="/mql5yao/Chapter/ten.html" class="sidebar-link">10 第十章 日期和时间</a></li><li><a href="/mql5yao/Chapter/eleven.html" class="sidebar-link">11 第十一章 账户信息</a></li><li><a href="/mql5yao/Chapter/twelve.html" class="sidebar-link">12 第十二章 检测</a></li><li><a href="/mql5yao/Chapter/thirteen.html" class="sidebar-link">13 第十三章 事件处理</a></li><li><a href="/mql5yao/Chapter/fourteen.html" class="sidebar-link">14 第十四章 市场信息</a></li><li><a href="/mql5yao/Chapter/fifteen.html" aria-current="page" class="active sidebar-link">15 第十五章 经济日历函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mql5yao/Chapter/fifteen.html#_15-1-calendarcountrybyid" class="sidebar-link">15.1 CalendarCountryById</a></li><li class="sidebar-sub-header"><a href="/mql5yao/Chapter/fifteen.html#_15-2-calendareventbyid" class="sidebar-link">15.2 CalendarEventById</a></li><li class="sidebar-sub-header"><a href="/mql5yao/Chapter/fifteen.html#_15-3-calendarvaluebyid" class="sidebar-link">15.3 CalendarValueById</a></li><li class="sidebar-sub-header"><a href="/mql5yao/Chapter/fifteen.html#_15-4-calendarcountries" class="sidebar-link">15.4 CalendarCountries</a></li><li class="sidebar-sub-header"><a href="/mql5yao/Chapter/fifteen.html#_15-5-calendareventbycountry" class="sidebar-link">15.5 CalendarEventByCountry</a></li><li class="sidebar-sub-header"><a href="/mql5yao/Chapter/fifteen.html#_15-6-calendareventbycurrency" class="sidebar-link">15.6 CalendarEventByCurrency</a></li><li class="sidebar-sub-header"><a href="/mql5yao/Chapter/fifteen.html#_15-7-calendarvaluehistorybyevent" class="sidebar-link">15.7 CalendarValueHistoryByEvent</a></li><li class="sidebar-sub-header"><a href="/mql5yao/Chapter/fifteen.html#_15-8-calendarvaluehistory" class="sidebar-link">15.8 CalendarValueHistory</a></li><li class="sidebar-sub-header"><a href="/mql5yao/Chapter/fifteen.html#_15-9-calendarvaluelastbyevent" class="sidebar-link">15.9 CalendarValueLastByEvent</a></li><li class="sidebar-sub-header"><a href="/mql5yao/Chapter/fifteen.html#_15-10-calendarvaluelast" class="sidebar-link">15.10 CalendarValueLast</a></li></ul></li><li><a href="/mql5yao/Chapter/sixteen.html" class="sidebar-link">16 第十六章 时间序列和指标访问</a></li><li><a href="/mql5yao/Chapter/seventeen.html" class="sidebar-link">17 第十七章 自定义交易品种</a></li><li><a href="/mql5yao/Chapter/eighteen.html" class="sidebar-link">18 第十八章 图表操作</a></li><li><a href="/mql5yao/Chapter/ninteen.html" class="sidebar-link">19 第十九章 交易函数</a></li><li><a href="/mql5yao/Chapter/twenty.html" class="sidebar-link">20 第二十章 交易信号</a></li><li><a href="/mql5yao/Chapter/twentyone.html" class="sidebar-link">21 第二十一章 网络函数</a></li><li><a href="/mql5yao/Chapter/twentytwo.html" class="sidebar-link">22 第二十二章 程序端全局变量</a></li><li><a href="/mql5yao/Chapter/twentythree.html" class="sidebar-link">23 第二十三章 文件函数</a></li><li><a href="/mql5yao/Chapter/twentyfour.html" class="sidebar-link">24 第二十四章 自定义指标</a></li><li><a href="/mql5yao/Chapter/twentyfive.html" class="sidebar-link">25 第二十五章 物件函数</a></li><li><a href="/mql5yao/Chapter/twentysix.html" class="sidebar-link">26 第二十六章 技术指标</a></li><li><a href="/mql5yao/Chapter/twentyseven.html" class="sidebar-link">27 第二十七章 处理优化结果</a></li><li><a href="/mql5yao/Chapter/twentyeight.html" class="sidebar-link">28 第二十八章 工作事件</a></li><li><a href="/mql5yao/Chapter/twentynine.html" class="sidebar-link">29 第二十九章 使用OpenCL工作</a></li><li><a href="/mql5yao/Chapter/thirty.html" class="sidebar-link">30 第三十章 使用数据库</a></li><li><a href="/mql5yao/Chapter/thirtyone.html" class="sidebar-link">31 第三十一章 使用DirectX</a></li><li><a href="/mql5yao/Chapter/thirtytwo.html" class="sidebar-link">32 第三十二章 集成</a></li><li><a href="/mql5yao/Chapter/add2.html" class="sidebar-link">32 第add2章 ONNX模型</a></li><li><a href="/mql5yao/Chapter/thirtythree.html" class="sidebar-link">33 第三十三章 标准程序库</a></li><li><a href="/mql5yao/Chapter/AppendixI.html" class="sidebar-link">34 附录一 来自MQL4</a></li><li><a href="/mql5yao/Chapter/AppendixII.html" class="sidebar-link">35 附录二 MQL5 函数列表</a></li><li><a href="/mql5yao/Chapter/AppendixIII.html" class="sidebar-link">36 附录三 MQL5常量列表</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2> 第十五章 经济日历函数</h2> <p>这部分描述了处理可在MetaTrader平台直接使用的经济日历的函数。经济日历是一个即时可用的百科全书，描述了宏观经济指标、指标发布日期以及重要程度。宏观经济指标的相关值会在发布时立即发送至MetaTrader平台，并以标签的形式显示在图表上，使您可以根据国家、货币和重要性直观地跟踪所需的指标。</p> <p>所有用于经济日历的函数都使用交易服务器时间(TimeTradeServer)。这意味着MqlCalendarValue结构中的时间和CalendarValueHistoryByEvent/CalendarValueHistory函数中输入的时间都在交易服务器时区中设置，而不是在用户本地时间设置。</p> <p>经济日历函数可以根据自定义重要性标准，从必要的国家/货币的角度对传入事件进行自动分析。</p> <table><thead><tr><th>函数</th> <th>功能</th></tr></thead> <tbody><tr><td>CalendarCountryById</td> <td>根据ID获得国家描述</td></tr> <tr><td>CalendarEventById</td> <td>根据ID获得事件描述</td></tr> <tr><td>CalendarValueById</td> <td>根据ID获得事件值描述</td></tr> <tr><td>CalendarCountries</td> <td>获得日历中可用的国家名称数组</td></tr> <tr><td>CalendarEventByCountry</td> <td>根据指定国家代码获得日历中可用的所有事件描述数组</td></tr> <tr><td>CalendarEventByCurrency</td> <td>根据指定货币获得日历中可用的所有事件描述数组</td></tr> <tr><td>CalendarValueHistoryByEvent</td> <td>根据事件ID获得指定时期的所有事件值数组</td></tr> <tr><td>CalendarValueHistory</td> <td>通过根据国家和/或货币进行排序的能力，获得指定时期的所有事件值数组</td></tr> <tr><td>CalendarValueLastByEvent</td> <td>通过指定change_id，从日历数据库状态根据ID获得事件值数组</td></tr> <tr><td>CalendarValueLast</td> <td>通过指定change_id和根据国家和/或货币进行排序的能力，从日历数据库状态获得所有事件值数组</td></tr></tbody></table> <h2 id="_15-1-calendarcountrybyid"><a href="#_15-1-calendarcountrybyid" class="header-anchor">#</a> 15.1 CalendarCountryById</h2> <p>根据ID获得国家描述。</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token keyword">bool</span>  <span class="token function">CalendarCountryById</span><span class="token punctuation">(</span>
+   <span class="token keyword">const</span> <span class="token keyword">long</span>           country_id<span class="token punctuation">,</span>     <span class="token comment">//国家 ID</span>
+   MqlCalendarCountry<span class="token operator">&amp;</span>  country         <span class="token comment">// 用于接收国家描述的变量</span>
+   <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>参数</p> <p>country_id</p> <p>[in]  国家ID (ISO 3166-1)。</p> <p>country</p> <p>[out] MqlCalendarCountry类型变量，用于接收国家描述。</p> <p>返回值</p> <p>如果成功返回true，否则返回false。若要获得有关错误的信息，请调用GetLastError()函数。可能错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>4001 – ERR_INTERNAL_ERROR（一般运行时错误）。
+5402 – ERR_CALENDAR_NO_DATA（国家未找到）。
+5401 – ERR_CALENDAR_TIMEOUT（超过请求时限）。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>例如：</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| 脚本程序起始函数                                                     |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 从经济日历中获得国家列表</span>
+   MqlCalendarCountry countries<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+   <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token function">CalendarCountries</span><span class="token punctuation">(</span>countries<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 检查结果</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>count<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;CalendarCountries() returned 0! Error %d&quot;</span><span class="token punctuation">,</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 如果有两个或两个以上的国家</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>count<span class="token operator">&gt;=</span><span class="token number">2</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      MqlCalendarCountry country<span class="token punctuation">;</span>
+      <span class="token comment">//--- 现在根据ID获得国家描述</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">CalendarCountryById</span><span class="token punctuation">(</span>countries<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token punctuation">,</span> country<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+         <span class="token comment">//--- 准备国家描述</span>
+         string descr<span class="token operator">=</span><span class="token string">&quot;id = &quot;</span><span class="token operator">+</span><span class="token function">IntegerToString</span><span class="token punctuation">(</span>country<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">;</span>
+         descr<span class="token operator">+=</span><span class="token punctuation">(</span><span class="token string">&quot;name = &quot;</span> <span class="token operator">+</span> country<span class="token punctuation">.</span>name<span class="token operator">+</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         descr<span class="token operator">+=</span><span class="token punctuation">(</span><span class="token string">&quot;code = &quot;</span> <span class="token operator">+</span> country<span class="token punctuation">.</span>code<span class="token operator">+</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         descr<span class="token operator">+=</span><span class="token punctuation">(</span><span class="token string">&quot;currency = &quot;</span> <span class="token operator">+</span> country<span class="token punctuation">.</span>currency<span class="token operator">+</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         descr<span class="token operator">+=</span><span class="token punctuation">(</span><span class="token string">&quot;currency_symbol = &quot;</span> <span class="token operator">+</span> country<span class="token punctuation">.</span>currency_symbol<span class="token operator">+</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         descr<span class="token operator">+=</span><span class="token punctuation">(</span><span class="token string">&quot;url_name = &quot;</span> <span class="token operator">+</span> country<span class="token punctuation">.</span>url_name<span class="token punctuation">)</span><span class="token punctuation">;</span>         
+         <span class="token comment">//--- 显示国家描述</span>
+         <span class="token function">Print</span><span class="token punctuation">(</span>descr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token keyword">else</span>
+         <span class="token function">Print</span><span class="token punctuation">(</span><span class="token string">&quot;CalendarCountryById() failed. Error &quot;</span><span class="token punctuation">,</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+<span class="token comment">//---</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">/*
+  结果：
+   id = 999
+   name = European Union
+   code = EU
+   currency = EUR
+   currency_symbol = �
+   url_name = european-union
+*/</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><p>另见</p> <p>CalendarCountries，CalendarEventByCountry</p> <h2 id="_15-2-calendareventbyid"><a href="#_15-2-calendareventbyid" class="header-anchor">#</a> 15.2 CalendarEventById</h2> <p>根据ID获得事件描述。</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token keyword">bool</span>  <span class="token function">CalendarEventById</span><span class="token punctuation">(</span>
+   ulong                event_id<span class="token punctuation">,</span>     <span class="token comment">// 事件ID</span>
+   MqlCalendarEvent<span class="token operator">&amp;</span>    event         <span class="token comment">// 用于接收事件描述的变量</span>
+   <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>参数</p> <p>event_id</p> <p>[in]  事件ID。</p> <p>event</p> <p>[out] MqlCalendarEvent类型变量，用于接收事件描述。</p> <p>返回值</p> <p>如果成功返回true，否则返回false。若要获得有关错误的信息，请调用GetLastError()函数。可能错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>4001 – ERR_INTERNAL_ERROR（一般运行时错误）。
+5402 – ERR_CALENDAR_NO_DATA（国家未找到）。
+5401 – ERR_CALENDAR_TIMEOUT（超过请求时限）。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>例如：</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| 脚本程序起始函数                                                     |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 德国国家代码(ISO 3166-1 Alpha-2)</span>
+   string germany_code<span class="token operator">=</span><span class="token string">&quot;DE&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 获得德国事件</span>
+   MqlCalendarEvent events<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+   <span class="token keyword">int</span> events_count<span class="token operator">=</span><span class="token function">CalendarEventByCountry</span><span class="token punctuation">(</span>germany_code<span class="token punctuation">,</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 在“日志”中显示德国事件</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>events_count<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Germany events: %d&quot;</span><span class="token punctuation">,</span>events_count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+   <span class="token keyword">else</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Failed to receive events for the country code %s, error %d&quot;</span><span class="token punctuation">,</span>
+                  germany_code<span class="token punctuation">,</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 脚本提前完成</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+<span class="token comment">//--- 从events[]数组获得最后事件的描述</span>
+   MqlCalendarEvent event<span class="token punctuation">;</span>
+   ulong event_id<span class="token operator">=</span>events<span class="token punctuation">[</span>events_count<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token punctuation">;</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">CalendarEventById</span><span class="token punctuation">(</span>event_id<span class="token punctuation">,</span>event<span class="token punctuation">)</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      MqlCalendarCountry country<span class="token punctuation">;</span> 
+      <span class="token function">CalendarCountryById</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>country_id<span class="token punctuation">,</span>country<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event description with event_id=%d received&quot;</span><span class="token punctuation">,</span>event_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Country: %s (country code = %d)&quot;</span><span class="token punctuation">,</span>country<span class="token punctuation">.</span>name<span class="token punctuation">,</span>event<span class="token punctuation">.</span>country_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event name: %s&quot;</span><span class="token punctuation">,</span>event<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event code: %s&quot;</span><span class="token punctuation">,</span>event<span class="token punctuation">.</span>event_code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event importance: %s&quot;</span><span class="token punctuation">,</span><span class="token function">EnumToString</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ENUM_CALENDAR_EVENT_IMPORTANCE<span class="token punctuation">)</span>event<span class="token punctuation">.</span>importance<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event type: %s&quot;</span><span class="token punctuation">,</span><span class="token function">EnumToString</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ENUM_CALENDAR_EVENT_TYPE<span class="token punctuation">)</span>event<span class="token punctuation">.</span>type<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event sector: %s&quot;</span><span class="token punctuation">,</span><span class="token function">EnumToString</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ENUM_CALENDAR_EVENT_SECTOR<span class="token punctuation">)</span>event<span class="token punctuation">.</span>sector<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event frequency: %s&quot;</span><span class="token punctuation">,</span><span class="token function">EnumToString</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ENUM_CALENDAR_EVENT_FREQUENCY<span class="token punctuation">)</span>event<span class="token punctuation">.</span>frequency<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event release mode: %s&quot;</span><span class="token punctuation">,</span><span class="token function">EnumToString</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ENUM_CALENDAR_EVENT_TIMEMODE<span class="token punctuation">)</span>event<span class="token punctuation">.</span>time_mode<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event measurement unit: %s&quot;</span><span class="token punctuation">,</span><span class="token function">EnumToString</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ENUM_CALENDAR_EVENT_UNIT<span class="token punctuation">)</span>event<span class="token punctuation">.</span>unit<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Number of decimal places: %d&quot;</span><span class="token punctuation">,</span>event<span class="token punctuation">.</span>digits<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event multiplier: %s&quot;</span><span class="token punctuation">,</span><span class="token function">EnumToString</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ENUM_CALENDAR_EVENT_MULTIPLIER<span class="token punctuation">)</span>event<span class="token punctuation">.</span>multiplier<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Source URL: %s&quot;</span><span class="token punctuation">,</span>event<span class="token punctuation">.</span>source_url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+   <span class="token keyword">else</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Failed to get event description for event_d=%s, error %d&quot;</span><span class="token punctuation">,</span>
+                  event_id<span class="token punctuation">,</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">/*
+  结果：
+  德国事件：50
+             [id] [type] [sector] [frequency] [time_mode] [country_id] [unit] [importance] [multiplier] [digits]                                [source_url]                       [event_code]                             [name] [reserved]
+   [ 0] 276010001      1        6           2           0          276      1            1            0        1 &quot;https://www.destatis.de/EN/Homepage.html&quot;  &quot;exports-mm&quot;                       &quot;Exports m/m&quot;                               0
+   [ 1] 276010002      1        6           2           0          276      1            1            0        1 &quot;https://www.destatis.de/EN/Homepage.html&quot;  &quot;imports-mm&quot;                       &quot;Imports m/m&quot;                               0
+   [ 2] 276010003      1        4           2           0          276      1            1            0        1 &quot;https://www.destatis.de/EN/Homepage.html&quot;  &quot;import-price-index-mm&quot;            &quot;Import Price Index m/m&quot;                    0
+   [ 3] 276010004      1        4           2           0          276      1            1            0        1 &quot;https://www.destatis.de/EN/Homepage.html&quot;  &quot;import-price-index-yy&quot;            &quot;Import Price Index y/y&quot;                    0
+   ....
+   [47] 276500001      1        8           2           0          276      0            2            0        1 &quot;https://www.markiteconomics.com&quot;           &quot;markit-manufacturing-pmi&quot;         &quot;Markit Manufacturing PMI&quot;                  0
+   [48] 276500002      1        8           2           0          276      0            2            0        1 &quot;https://www.markiteconomics.com&quot;           &quot;markit-services-pmi&quot;              &quot;Markit Services PMI&quot;                       0
+   [49] 276500003      1        8           2           0          276      0            2            0        1 &quot;https://www.markiteconomics.com&quot;           &quot;markit-composite-pmi&quot;             &quot;Markit Composite PMI&quot;                      0
+  接收event_id=276500003事件描述
+  国家：德国（国家代码= 276）
+  事件名称：Markit综合PMI
+  事件代码：markit-composite-pmi
+   事件重要性： CALENDAR_IMPORTANCE_MODERATE
+   事件类型：CALENDAR_TYPE_INDICATOR
+   事件版块：CALENDAR_SECTOR_BUSINESS
+   事件频率：CALENDAR_FREQUENCY_MONTH
+   事件发布模式： CALENDAR_TIMEMODE_DATETIME
+   事件计量单位：CALENDAR_UNIT_NONE
+  小数位数：1
+   乘数值：CALENDAR_MULTIPLIER_NONE
+   源URL：https://www.markiteconomics.com
+*/</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br></div></div><p>另见</p> <p>CalendarEventByCountry， CalendarEventByCurrency， CalendarValueById</p> <h2 id="_15-3-calendarvaluebyid"><a href="#_15-3-calendarvaluebyid" class="header-anchor">#</a> 15.3 CalendarValueById</h2> <p>根据ID获得事件值描述。</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token keyword">bool</span>  <span class="token function">CalendarValueById</span><span class="token punctuation">(</span>
+   ulong                value_id<span class="token punctuation">,</span>     <span class="token comment">// 事件值ID </span>
+   MqlCalendarValue<span class="token operator">&amp;</span>    value         <span class="token comment">// 用于接收事件值的变量</span>
+   <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>参数</p> <p>value_id</p> <p>[in]  事件值ID。</p> <p>值</p> <p>[out] MqlCalendarValue类型变量，用于接收事件描述。</p> <p>返回值</p> <p>如果成功返回true，否则返回false。若要获得有关错误的信息，请调用GetLastError()函数。可能错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>4001 – ERR_INTERNAL_ERROR（一般运行时错误）。
+5402 – ERR_CALENDAR_NO_DATA（国家未找到）。
+5401 – ERR_CALENDAR_TIMEOUT（超过请求时限）。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>注意</p> <p>所有用于经济日历的函数都使用交易服务器时间(TimeTradeServer)。这意味着MqlCalendarValue结构中的时间和CalendarValueHistoryByEvent/CalendarValueHistory函数中输入的时间都在交易服务器时区中设置，而不是在用户本地时间设置。</p> <p>MqlCalendarValue结构提供了检查和设置actual_value、forecast_value、prev_value和revised_prev_value字段值的方法。如果没有指定任何值，则该字段存储LONG_MIN (-9223372036854775808)。</p> <p>请注意，存储在这些字段中的值要乘以100万。这表示当您使用函数CalendarValueById、CalendarValueHistoryByEvent、CalendarValueHistory、CalendarValueLastByEvent、CalendarValueLast接收MqlCalendarValue中的值时，您应该检查该字段值是否等于LONG_MIN；如果在字段中指定一个值，那么您应该将该值除以1,000,000以获得该值。另一种获取该值的方法是使用MqlCalendarValue结构的函数检查和获取值。</p> <p>例如：</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| 脚本程序起始函数                                                     |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 日本国家代码(ISO 3166-1 Alpha-2)</span>
+   string japan_code<span class="token operator">=</span><span class="token string">&quot;JP&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 设置事件发生间隔的边界</span>
+   datetime date_from<span class="token operator">=</span>D<span class="token char">'01.01.2018'</span><span class="token punctuation">;</span>  <span class="token comment">// 获取2018年的所有事件</span>
+   datetime date_to<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>                <span class="token comment">// 0 指所有已知事件，包括尚未发生的事件   </span>
+<span class="token comment">//--- 获得日本事件值的数组</span>
+   MqlCalendarValue values<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+   <span class="token keyword">int</span> values_count<span class="token operator">=</span><span class="token function">CalendarValueHistory</span><span class="token punctuation">(</span>values<span class="token punctuation">,</span>date_from<span class="token punctuation">,</span>date_to<span class="token punctuation">,</span>japan_code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 沿着检测到的事件值移动</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>values_count<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Number of values for Japan events: %d&quot;</span><span class="token punctuation">,</span>values_count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 删除所有“空”值(actual_value==-9223372036854775808)       </span>
+      <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span>values_count<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&gt;=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+         <span class="token keyword">if</span><span class="token punctuation">(</span>values<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>actual_value<span class="token operator">==</span><span class="token operator">-</span><span class="token number">9223372036854775808</span><span class="token punctuation">)</span>
+            <span class="token function">ArrayRemove</span><span class="token punctuation">(</span>values<span class="token punctuation">,</span>i<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Number of values after deleting empty ones: %d&quot;</span><span class="token punctuation">,</span><span class="token function">ArraySize</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+   <span class="token keyword">else</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Failed to receive events for the country code %s, error %d&quot;</span><span class="token punctuation">,</span>
+                  japan_code<span class="token punctuation">,</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 脚本提前完成</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+<span class="token comment">//--- 在values[]数组中保留不超过10个值</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">ArraySize</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">10</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Reduce the list of values to 10 and display them&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">ArrayRemove</span><span class="token punctuation">(</span>values<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token function">ArraySize</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+   <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+<span class="token comment">//--- 现在，让我们展示如何基于已知的value_id获得事件值描述</span>
+   <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token function">ArraySize</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      MqlCalendarValue value<span class="token punctuation">;</span>
+      <span class="token function">CalendarValueById</span><span class="token punctuation">(</span>values<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%d: value_id=%d value=%d impact=%s&quot;</span><span class="token punctuation">,</span>
+                  i<span class="token punctuation">,</span>values<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token punctuation">,</span>value<span class="token punctuation">.</span>actual_value<span class="token punctuation">,</span><span class="token function">EnumToString</span><span class="token punctuation">(</span><span class="token function">ENUM_CALENDAR_EVENT_IMPACT</span><span class="token punctuation">(</span>value<span class="token punctuation">.</span>impact_type<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+<span class="token comment">//---</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">/*
+  结果：
+  日本事件值的数量：1734
+  删除空值后的值数量：1017
+  将值列表减少到10并显示
+        [id] [event_id]              [time]            [period] [revision] [actual_value] [prev_value] [revised_prev_value] [forecast_value] [impact_type] [reserved]
+   [0] 56500  392030004 2019.03.28 23:30:00 2019.03.01 00:00:00          0         900000       600000 -9223372036854775808           500000             1          0
+   [1] 56501  392030005 2019.03.28 23:30:00 2019.03.01 00:00:00          0         700000       700000 -9223372036854775808           700000             0          0
+   [2] 56502  392030006 2019.03.28 23:30:00 2019.03.01 00:00:00          0        1100000      1100000 -9223372036854775808           900000             1          0
+   [3] 56544  392030007 2019.03.28 23:30:00 2019.02.01 00:00:00          0        2300000      2500000 -9223372036854775808          2200000             2          0
+   [4] 56556  392050002 2019.03.28 23:30:00 2019.02.01 00:00:00          0        1630000      1630000              1610000          1620000             1          0
+   [5] 55887  392020003 2019.03.28 23:50:00 2019.02.01 00:00:00          0         400000       600000 -9223372036854775808          1300000             2          0
+   [6] 55888  392020004 2019.03.28 23:50:00 2019.02.01 00:00:00          0       -1800000     -3300000 -9223372036854775808         -2000000             1          0
+   [7] 55889  392020002 2019.03.28 23:50:00 2019.02.01 00:00:00          0         200000     -2300000             -1800000           300000             2          0
+   [8] 55948  392020006 2019.03.28 23:50:00 2019.02.01 00:00:00          1        1400000     -3400000 -9223372036854775808          -300000             1          0
+   [9] 55949  392020007 2019.03.28 23:50:00 2019.02.01 00:00:00          1       -1000000       300000 -9223372036854775808          -100000             2          0
+  显示基于value_id的关于事件值的简要数据
+   0: value_id=56500 value=900000 impact=CALENDAR_IMPACT_POSITIVE
+   1: value_id=56501 value=700000 impact=CALENDAR_IMPACT_NA
+   2: value_id=56502 value=1100000 impact=CALENDAR_IMPACT_POSITIVE
+   3: value_id=56544 value=2300000 impact=CALENDAR_IMPACT_NEGATIVE
+   4: value_id=56556 value=1630000 impact=CALENDAR_IMPACT_POSITIVE
+   5: value_id=55887 value=400000 impact=CALENDAR_IMPACT_NEGATIVE
+   6: value_id=55888 value=-1800000 impact=CALENDAR_IMPACT_POSITIVE
+   7: value_id=55889 value=200000 impact=CALENDAR_IMPACT_NEGATIVE
+   8: value_id=55948 value=1400000 impact=CALENDAR_IMPACT_POSITIVE
+   9: value_id=55949 value=-1000000 impact=CALENDAR_IMPACT_NEGATIVE
+*/</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br></div></div><p>另见</p> <p>CalendarValueHistoryByEvent， CalendarValueHistory， CalendarValueLastByEvent， CalendarValueLast</p> <h2 id="_15-4-calendarcountries"><a href="#_15-4-calendarcountries" class="header-anchor">#</a> 15.4 CalendarCountries</h2> <p>获得“日历”中可用的国家名称数组。</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token keyword">int</span>  <span class="token function">CalendarCountries</span><span class="token punctuation">(</span>
+   MqlCalendarCountry<span class="token operator">&amp;</span>  countries<span class="token punctuation">[</span><span class="token punctuation">]</span>         <span class="token comment">// 用于接收“日历”国家描述列表的数组</span>
+   <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>参数</p> <p>countries[]</p> <p>[out] MqlCalendarCountry类型数组，用于接收所有“日历”国家的描述。</p> <p>返回值</p> <p>所接收的描述数量。若要获得有关错误的信息，请调用GetLastError()函数。可能错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>4001 – ERR_INTERNAL_ERROR（一般运行时错误）。
+5401 – ERR_CALENDAR_TIMEOUT（超过请求时限）。
+5400 – ERR_CALENDAR_MORE_DATA（数组大小不足以接收所有国家的描述，只可以接收那些适合的国家）。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>例如：</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| 脚本程序起始函数                                                     |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 从经济日历中获得国家列表</span>
+   MqlCalendarCountry countries<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+   <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token function">CalendarCountries</span><span class="token punctuation">(</span>countries<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 在“日志”中显示数组</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>count<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+      <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>countries<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">else</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;CalendarCountries() returned 0! Error %d&quot;</span><span class="token punctuation">,</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/*
+  结果：
+        [id]           [name] [code] [currency] [currency_symbol]       [url_name] [reserved]
+   [ 0]    0 &quot;Worldwide&quot;      &quot;WW&quot;   &quot;ALL&quot;      &quot;&quot;                &quot;worldwide&quot;               0
+   [ 1]  999 &quot;European Union&quot; &quot;EU&quot;   &quot;EUR&quot;      &quot;�&quot;               &quot;european-union&quot;          0
+   [ 2]  840 &quot;United States&quot;  &quot;US&quot;   &quot;USD&quot;      &quot;$&quot;               &quot;united-states&quot;           0
+   [ 3]  124 &quot;Canada&quot;         &quot;CA&quot;   &quot;CAD&quot;      &quot;$&quot;               &quot;canada&quot;                  0
+   [ 4]   36 &quot;Australia&quot;      &quot;AU&quot;   &quot;AUD&quot;      &quot;$&quot;               &quot;australia&quot;               0
+   [ 5]  554 &quot;New Zealand&quot;    &quot;NZ&quot;   &quot;NZD&quot;      &quot;$&quot;               &quot;new-zealand&quot;             0
+   [ 6]  392 &quot;Japan&quot;          &quot;JP&quot;   &quot;JPY&quot;      &quot;Ґ&quot;               &quot;japan&quot;                   0
+   [ 7]  156 &quot;China&quot;          &quot;CN&quot;   &quot;CNY&quot;      &quot;Ґ&quot;               &quot;china&quot;                   0
+   [ 8]  826 &quot;United Kingdom&quot; &quot;GB&quot;   &quot;GBP&quot;      &quot;Ј&quot;               &quot;united-kingdom&quot;          0
+   [ 9]  756 &quot;Switzerland&quot;    &quot;CH&quot;   &quot;CHF&quot;      &quot;₣&quot;               &quot;switzerland&quot;             0
+   [10]  276 &quot;Germany&quot;        &quot;DE&quot;   &quot;EUR&quot;      &quot;�&quot;               &quot;germany&quot;                 0
+   [11]  250 &quot;France&quot;         &quot;FR&quot;   &quot;EUR&quot;      &quot;�&quot;               &quot;france&quot;                  0
+   [12]  380 &quot;Italy&quot;          &quot;IT&quot;   &quot;EUR&quot;      &quot;�&quot;               &quot;italy&quot;                   0
+   [13]  724 &quot;Spain&quot;          &quot;ES&quot;   &quot;EUR&quot;      &quot;�&quot;               &quot;spain&quot;                   0
+   [14]   76 &quot;Brazil&quot;         &quot;BR&quot;   &quot;BRL&quot;      &quot;R$&quot;              &quot;brazil&quot;                  0
+   [15]  410 &quot;South Korea&quot;    &quot;KR&quot;   &quot;KRW&quot;      &quot;₩&quot;               &quot;south-korea&quot;             0
+*/</span>
+  <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><p>另见</p> <p>CalendarEventByCountry， CalendarCountryById</p> <h2 id="_15-5-calendareventbycountry"><a href="#_15-5-calendareventbycountry" class="header-anchor">#</a> 15.5 CalendarEventByCountry</h2> <p>根据指定国家代码获得日历中可用的所有事件描述数组。</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token keyword">int</span>  <span class="token function">CalendarEventByCountry</span><span class="token punctuation">(</span>
+   string               country_code<span class="token punctuation">,</span>     <span class="token comment">// 国家代码名称(ISO 3166-1 alpha-2)</span>
+   MqlCalendarEvent<span class="token operator">&amp;</span>    events<span class="token punctuation">[</span><span class="token punctuation">]</span>          <span class="token comment">//用于接收描述数组的变量</span>
+   <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>参数</p> <p>country_code</p> <p>[in]  国家代码名称(ISO 3166-1 alpha-2)</p> <p>events[]</p> <p>[out] MqlCalendarEvent类型数组，用于接收指定国家的所有事件描述。</p> <p>返回值</p> <p>所接收的描述数量。若要获得有关错误的信息，请调用GetLastError()函数。可能错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>4001 – ERR_INTERNAL_ERROR（一般运行时错误）。
+4004 – ERR_NOT_ENOUGH_MEMORY（内存不足，无法执行请求）。
+5401 – ERR_CALENDAR_TIMEOUT（超过请求时限）。
+执行 ArrayResize()失败的错误
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>例如：</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| 脚本程序起始函数                                                     |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 欧盟国家代码(ISO 3166-1 Alpha-2)</span>
+   string EU_code<span class="token operator">=</span><span class="token string">&quot;EU&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 获得欧盟事件</span>
+   MqlCalendarEvent events<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+   <span class="token keyword">int</span> events_count<span class="token operator">=</span><span class="token function">CalendarEventByCountry</span><span class="token punctuation">(</span>EU_code<span class="token punctuation">,</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 在“日志”中显示欧盟事件</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>events_count<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;EU events: %d&quot;</span><span class="token punctuation">,</span>events_count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+<span class="token comment">//---</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">/*
+  结果：
+  欧盟事件：56
+             [id] [type]  [country_id] [unit] [importance] [multiplier] [digits] [event_code]                                     
+   [ 0] 999010001      0          999      0            2            0        0  &quot;ECB Non-monetary Policy Meeting&quot;   
+   [ 1] 999010002      0          999      0            2            0        0  &quot;ECB Monetary Policy Meeting Account
+   [ 2] 999010003      0          999      0            3            0        0  &quot;ECB Monetary Policy Press Conferenc
+   [ 3] 999010004      0          999      0            3            0        0  &quot;ECB President Draghi Speech&quot;       
+   [ 4] 999010005      0          999      0            2            0        0  &quot;ECB Vice President Constancio Speec
+   [ 5] 999010006      1          999      1            3            0        2  &quot;ECB Deposit Facility Rate Decision&quot;
+   [ 6] 999010007      1          999      1            3            0        2  &quot;ECB Interest Rate Decision&quot;        
+   [ 7] 999010008      0          999      0            2            0        0  &quot;ECB Economic Bulletin&quot;             
+   [ 8] 999010009      1          999      2            2            3        3  &quot;ECB Targeted LTRO&quot;                 
+   [ 9] 999010010      0          999      0            2            0        0  &quot;ECB Executive Board Member Praet Sp
+   [10] 999010011      0          999      0            2            0        0  &quot;ECB Executive Board Member Mersch S   
+   ...
+ 
+*/</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>另见</p> <p>CalendarCountries，CalendarCountryById</p> <h2 id="_15-6-calendareventbycurrency"><a href="#_15-6-calendareventbycurrency" class="header-anchor">#</a> 15.6 CalendarEventByCurrency</h2> <p>根据指定货币获得日历中可用的所有事件描述数组。</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token keyword">int</span>  <span class="token function">CalendarEventByCurrency</span><span class="token punctuation">(</span>
+   <span class="token keyword">const</span> string         currency<span class="token punctuation">,</span>     <span class="token comment">// 国家货币代码名称</span>
+   MqlCalendarEvent<span class="token operator">&amp;</span>    events<span class="token punctuation">[</span><span class="token punctuation">]</span>      <span class="token comment">// 用于接收描述数组的变量</span>
+   <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>参数</p> <p>currency</p> <p>[in]  国家货币代码名称。</p> <p>events[]</p> <p>[out] MqlCalendarEvent类型数组，用于接收指定货币的所有事件描述。</p> <p>返回值</p> <p>所接收的描述数量。若要获得有关错误的信息，请调用GetLastError()函数。可能错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>4001 – ERR_INTERNAL_ERROR（一般运行时错误）。
+4004 – ERR_NOT_ENOUGH_MEMORY（内存不足，无法执行请求）。
+5401 – ERR_CALENDAR_TIMEOUT（超过请求时限）。
+执行 ArrayResize()失败的错误
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>例如：</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| 脚本程序起始函数                                                     |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 声明用于接收经济日历事件的数组</span>
+      MqlCalendarEvent events<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 获得欧盟货币事件      </span>
+      <span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token function">CalendarEventByCurrency</span><span class="token punctuation">(</span><span class="token string">&quot;EUR&quot;</span><span class="token punctuation">,</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">Print</span><span class="token punctuation">(</span><span class="token string">&quot;count = &quot;</span><span class="token punctuation">,</span> count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 10个事件足以满足当前示例</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>count<span class="token operator">&gt;</span><span class="token number">10</span><span class="token punctuation">)</span>
+         <span class="token function">ArrayResize</span><span class="token punctuation">(</span>events<span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 在“日志”中显示事件        </span>
+      <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">/*
+  结果：
+             [id] [type] [country_id] [unit] [importance]                                        [source_url]                                 [event_code]                                    [name] 
+   [0] 999010001      0          999      0            2 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-non-monetary-policy-meeting&quot;            &quot;ECB Non-monetary Policy Meeting&quot;                
+   [1] 999010002      0          999      0            2 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-monetary-policy-meeting-accounts&quot;       &quot;ECB Monetary Policy Meeting Accounts&quot;           
+   [2] 999010003      0          999      0            3 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-monetary-policy-press-conference&quot;       &quot;ECB Monetary Policy Press Conference&quot;           
+   [3] 999010004      0          999      0            3 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-president-draghi-speech&quot;                &quot;ECB President Draghi Speech&quot;                    
+   [4] 999010005      0          999      0            2 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-vice-president-vitor-constancio-speech&quot; &quot;ECB Vice President Constancio Speech&quot;           
+   [5] 999010006      1          999      1            3 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-deposit-rate-decision&quot;                  &quot;ECB Deposit Facility Rate Decision&quot;             
+   [6] 999010007      1          999      1            3 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-interest-rate-decision&quot;                 &quot;ECB Interest Rate Decision&quot;                     
+   [7] 999010008      0          999      0            2 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-economic-bulletin&quot;                      &quot;ECB Economic Bulletin&quot;                          
+   [8] 999010009      1          999      2            2 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;targeted-ltro&quot;                              &quot;ECB Targeted LTRO&quot;                              
+   [9] 999010010      0          999      0            2 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-executive-board-member-praet-speech&quot;    &quot;ECB Executive Board Member Praet Speech&quot;        
+*/</span>  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>另见</p> <p>CalendarEventById，CalendarEventByCountry</p> <h2 id="_15-7-calendarvaluehistorybyevent"><a href="#_15-7-calendarvaluehistorybyevent" class="header-anchor">#</a> 15.7 CalendarValueHistoryByEvent</h2> <p>根据事件ID获得指定时期的所有事件值数组。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>bool  CalendarValueHistoryByEvent(
+   ulong              event_id,          // 事件ID 
+   MqlCalendarValue&amp;  values[],          // 值描述数组
+   datetime           datetime_from,     // 时间范围的左边框
+   datetime           datetime_to=0      // 时间范围的右边框
+   );
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>参数</p> <p>event_id</p> <p>[in]  事件ID。</p> <p>values[]</p> <p>[out] MqlCalendarValue类型数组，用于接收事件值。</p> <p>datetime_from</p> <p>[in]  时间范围事件的初始日期通过指定ID选择，而datetime_from &lt; datetime_to。</p> <p>datetime_to=0</p> <p>[in]  时间范围事件的结束日期通过指定ID选择。如果datetime_to 没有设置（或设置为0），那么返回在“日历”数据库中从指定datetime_from日期开始的所有事件值（包括未来事件的值）。</p> <p>返回值</p> <p>如果成功返回true，否则返回false。若要获得有关错误的信息，请调用GetLastError()函数。可能错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>4001 – ERR_INTERNAL_ERROR（一般运行时错误）。
+4004 – ERR_NOT_ENOUGH_MEMORY（内存不足，无法执行请求）。
+5401 – ERR_CALENDAR_TIMEOUT（超过请求时限）。
+5400 – ERR_CALENDAR_MORE_DATA（数组大小不足以接收所有值的描述，只可以接收那些适合的值）。
+执行 ArrayResize()失败的错误
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>注意</p> <p>所有用于经济日历的函数都使用交易服务器时间(TimeTradeServer)。这意味着MqlCalendarValue结构中的时间和CalendarValueHistoryByEvent/CalendarValueHistory函数中输入的时间都在交易服务器时区中设置，而不是在用户本地时间设置。</p> <p>MqlCalendarValue结构提供了检查和设置actual_value、forecast_value、prev_value和revised_prev_value字段值的方法。如果没有指定任何值，则该字段存储LONG_MIN (-9223372036854775808)。</p> <p>请注意，存储在这些字段中的值要乘以100万。这表示当您使用函数CalendarValueById、CalendarValueHistoryByEvent、CalendarValueHistory、CalendarValueLastByEvent、CalendarValueLast接收MqlCalendarValue中的值时，您应该检查该字段值是否等于LONG_MIN；如果在字段中指定一个值，那么您应该将该值除以1,000,000以获得该值。另一种获取该值的方法是使用MqlCalendarValue结构的函数检查和获取值。</p> <p>例如：</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| 脚本程序起始函数                                                     |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 欧盟国家代码(ISO 3166-1 Alpha-2)</span>
+   string EU_code<span class="token operator">=</span><span class="token string">&quot;EU&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 获得欧盟事件</span>
+   MqlCalendarEvent events<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+   <span class="token keyword">int</span> events_count<span class="token operator">=</span><span class="token function">CalendarEventByCountry</span><span class="token punctuation">(</span>EU_code<span class="token punctuation">,</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 在“日志”中显示欧盟事件</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>events_count<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;EU events: %d&quot;</span><span class="token punctuation">,</span>events_count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 减少事件列表，10个事件足以分析</span>
+      <span class="token function">ArrayResize</span><span class="token punctuation">(</span>events<span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+<span class="token comment">//--- 查阅“ECB利率决策”事件event_id=999010007</span>
+   ulong event_id<span class="token operator">=</span>events<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token punctuation">;</span>        <span class="token comment">// 事件ID可在“日历”中更改，因此一定进行验证</span>
+   string event_name<span class="token operator">=</span>events<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>   <span class="token comment">// “日历”事件的名称</span>
+   <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Get values for event_name=%s event_id=%d&quot;</span><span class="token punctuation">,</span>event_name<span class="token punctuation">,</span>event_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 获得“ECB利率决策”事件的所有值</span>
+   MqlCalendarValue values<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 设置事件发生间隔的边界</span>
+   datetime date_from<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>           <span class="token comment">// 获取可用历史开始的所有事件</span>
+   datetime date_to<span class="token operator">=</span>D<span class="token char">'01.01.2016'</span><span class="token punctuation">;</span> <span class="token comment">// 获取2016年以后的事件</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">CalendarValueHistoryByEvent</span><span class="token punctuation">(</span>event_id<span class="token punctuation">,</span>values<span class="token punctuation">,</span>date_from<span class="token punctuation">,</span>date_to<span class="token punctuation">)</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Received values for %s: %d&quot;</span><span class="token punctuation">,</span>
+                  event_name<span class="token punctuation">,</span><span class="token function">ArraySize</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 减少值列表，10个事件足以分析</span>
+      <span class="token function">ArrayResize</span><span class="token punctuation">(</span>values<span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+   <span class="token keyword">else</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Error! Failed to get values for event_id=%d&quot;</span><span class="token punctuation">,</span>event_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Error code: %d&quot;</span><span class="token punctuation">,</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">//---</span>
+<span class="token comment">/*
+  结果：
+  欧盟事件：56
+            [id] [type] [sector] [frequency] [time_mode] [country_id] [unit] [importance] [multiplier] [digits]                                        [source_url]                                 [event_code]                                    [name] [reserv
+   [0] 999010001      0        5           0           0          999      0            2            0        0 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-non-monetary-policy-meeting&quot;            &quot;ECB Non-monetary Policy Meeting&quot;                
+   [1] 999010002      0        5           0           0          999      0            2            0        0 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-monetary-policy-meeting-accounts&quot;       &quot;ECB Monetary Policy Meeting Accounts&quot;           
+   [2] 999010003      0        5           0           0          999      0            3            0        0 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-monetary-policy-press-conference&quot;       &quot;ECB Monetary Policy Press Conference&quot;           
+   [3] 999010004      0        5           0           0          999      0            3            0        0 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-president-draghi-speech&quot;                &quot;ECB President Draghi Speech&quot;                    
+   [4] 999010005      0        5           0           0          999      0            2            0        0 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-vice-president-vitor-constancio-speech&quot; &quot;ECB Vice President Constancio Speech&quot;           
+   [5] 999010006      1        5           0           0          999      1            3            0        2 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-deposit-rate-decision&quot;                  &quot;ECB Deposit Facility Rate Decision&quot;             
+   [6] 999010007      1        5           0           0          999      1            3            0        2 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-interest-rate-decision&quot;                 &quot;ECB Interest Rate Decision&quot;                     
+   [7] 999010008      0        5           0           0          999      0            2            0        0 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-economic-bulletin&quot;                      &quot;ECB Economic Bulletin&quot;                          
+   [8] 999010009      1        5           0           0          999      2            2            3        3 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;targeted-ltro&quot;                              &quot;ECB Targeted LTRO&quot;                              
+   [9] 999010010      0        5           0           0          999      0            2            0        0 &quot;https://www.ecb.europa.eu/home/html/index.en.html&quot; &quot;ecb-executive-board-member-praet-speech&quot;    &quot;ECB Executive Board Member Praet Speech&quot;        
+  获得event_name=ECB Interest Rate Decision值 event_id=999010007
+  已接收的“ECB利率决策”事件值：102
+       [id] [event_id]              [time]            [period] [revision] [actual_value] [prev_value] [revised_prev_value]     [forecast_value] [impact_type] [reserved]
+   [0] 2776  999010007 2007.03.08 11:45:00 1970.01.01 00:00:00          0        3750000      4250000 -9223372036854775808 -9223372036854775808             0          0
+   [1] 2777  999010007 2007.05.10 11:45:00 1970.01.01 00:00:00          0        3750000      3750000 -9223372036854775808 -9223372036854775808             0          0
+   [2] 2778  999010007 2007.06.06 11:45:00 1970.01.01 00:00:00          0        4000000      3750000 -9223372036854775808 -9223372036854775808             0          0
+   [3] 2779  999010007 2007.07.05 11:45:00 1970.01.01 00:00:00          0        4000000      4000000 -9223372036854775808 -9223372036854775808             0          0
+   [4] 2780  999010007 2007.08.02 11:45:00 1970.01.01 00:00:00          0        4000000      4000000 -9223372036854775808 -9223372036854775808             0          0
+   [5] 2781  999010007 2007.09.06 11:45:00 1970.01.01 00:00:00          0        4000000      4000000 -9223372036854775808 -9223372036854775808             0          0
+   [6] 2782  999010007 2007.10.04 11:45:00 1970.01.01 00:00:00          0        4000000      4000000 -9223372036854775808 -9223372036854775808             0          0
+   [7] 2783  999010007 2007.11.08 12:45:00 1970.01.01 00:00:00          0        4000000      4000000 -9223372036854775808 -9223372036854775808             0          0
+   [8] 2784  999010007 2007.12.06 12:45:00 1970.01.01 00:00:00          0        4000000      4000000 -9223372036854775808 -9223372036854775808             0          0
+   [9] 2785  999010007 2008.01.10 12:45:00 1970.01.01 00:00:00          0        4000000      4000000 -9223372036854775808 -9223372036854775808             0          0
+*/</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br></div></div><p>另见</p> <p>CalendarCountries， CalendarEventByCountry， CalendarValueHistory， CalendarEventById，CalendarValueById</p> <h2 id="_15-8-calendarvaluehistory"><a href="#_15-8-calendarvaluehistory" class="header-anchor">#</a> 15.8 CalendarValueHistory</h2> <p>通过根据国家和/或货币进行排序的能力，获得指定时期的所有事件值数组。</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token keyword">bool</span>  <span class="token function">CalendarValueHistory</span><span class="token punctuation">(</span>
+   MqlCalendarValue<span class="token operator">&amp;</span>  values<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>              <span class="token comment">// 值描述数组</span>
+   datetime           datetime_from<span class="token punctuation">,</span>         <span class="token comment">// 时间范围的左边框</span>
+   datetime           datetime_to<span class="token operator">=</span><span class="token number">0</span>          <span class="token comment">//时间范围的右边框</span>
+   <span class="token keyword">const</span> string       country_code<span class="token operator">=</span><span class="token constant">NULL</span><span class="token punctuation">,</span>     <span class="token comment">// 国家代码名称(ISO 3166-1 alpha-2)</span>
+   <span class="token keyword">const</span> string       currency<span class="token operator">=</span><span class="token constant">NULL</span>          <span class="token comment">// 国家货币代码名称 </span>
+   <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>参数</p> <p>values[]</p> <p>[out] MqlCalendarValue类型数组，用于接收事件值。</p> <p>datetime_from</p> <p>[in]  时间范围事件的初始日期通过指定ID选择，而datetime_from &lt; datetime_to。</p> <p>datetime_to=0</p> <p>[in]  时间范围事件的结束日期通过指定ID选择。如果datetime_to 没有设置（或设置为0），那么返回在“日历”数据库中从指定datetime_from日期开始的所有事件值（包括未来事件的值）。</p> <p>country_code=NULL</p> <p>[in]  国家代码名称(ISO 3166-1 alpha-2)</p> <p>currency=NULL</p> <p>[in]  国家货币代码名称。</p> <p>返回值</p> <p>如果成功返回true，否则返回false。若要获得有关错误的信息，请调用GetLastError()函数。可能错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>4001 – ERR_INTERNAL_ERROR（一般运行时错误）。
+4004 – ERR_NOT_ENOUGH_MEMORY（内存不足，无法执行请求）。
+5401 – ERR_CALENDAR_TIMEOUT（超过请求时限）。
+5400 – ERR_CALENDAR_MORE_DATA（数组大小不足以接收所有值的描述，只可以接收那些适合的值）。
+执行ArrayResize()失败的错误
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>注意</p> <p>所有用于经济日历的函数都使用交易服务器时间(TimeTradeServer)。这意味着MqlCalendarValue结构中的时间和CalendarValueHistoryByEvent/CalendarValueHistory函数中输入的时间都在交易服务器时区中设置，而不是在用户本地时间设置。</p> <p>如果固定长度的events[]数组被传递到函数且没有足够空间保存整个结果，则会激活ERR_CALENDAR_MORE_DATA (5400)错误。</p> <p>如果datetime_to没有设置（或设置为0），那么返回在“日历”数据库中从指定datetime_from日期开始的所有事件值（包括未来事件的值）。</p> <p>对于country_code和currency 过滤器，NULL和&quot;&quot;值是相同的，表示没有过滤器。</p> <p>对于country_code，MqlCalendarCountry结构的code字段，例如应使用 &quot;US&quot;、&quot;RU&quot;或&quot;EU&quot;。</p> <p>对于currency，MqlCalendarCountry结构的currency字段，例如应使用&quot;USD&quot;、&quot;RUB&quot;或&quot;EUR&quot;。</p> <p>过滤器是通过连接使用的，即合理'AND'仅用于选择同时满足两个条件（国家和货币）的事件值。</p> <p>MqlCalendarValue结构提供了检查和设置actual_value、forecast_value、prev_value和revised_prev_value字段值的方法。如果没有指定任何值，则该字段存储LONG_MIN (-9223372036854775808)。</p> <p>请注意，存储在这些字段中的值要乘以100万。这表示当您使用函数CalendarValueById、CalendarValueHistoryByEvent、CalendarValueHistory、CalendarValueLastByEvent、CalendarValueLast接收MqlCalendarValue中的值时，您应该检查该字段值是否等于LONG_MIN；如果在字段中指定一个值，那么您应该将该值除以1,000,000以获得该值。另一种获取该值的方法是使用MqlCalendarValue结构的函数检查和获取值。</p> <p>例如：</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| 脚本程序起始函数                                                     |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 欧盟国家代码(ISO 3166-1 Alpha-2)</span>
+   string EU_code<span class="token operator">=</span><span class="token string">&quot;EU&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 获得所有欧盟事件值</span>
+   MqlCalendarValue values<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 设置事件发生间隔的边界</span>
+   datetime date_from<span class="token operator">=</span>D<span class="token char">'01.01.2018'</span><span class="token punctuation">;</span>  <span class="token comment">// 获取2018年的所有事件</span>
+   datetime date_to<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>                <span class="token comment">// 0 指所有已知事件，包括尚未发生的事件 </span>
+<span class="token comment">//--- 请求2018年以来的欧盟事件历史</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">CalendarValueHistory</span><span class="token punctuation">(</span>values<span class="token punctuation">,</span>date_from<span class="token punctuation">,</span>date_to<span class="token punctuation">,</span>EU_code<span class="token punctuation">)</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Received event values for country_code=%s: %d&quot;</span><span class="token punctuation">,</span>
+                  EU_code<span class="token punctuation">,</span><span class="token function">ArraySize</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 减少输出到“日志”的数组大小</span>
+      <span class="token function">ArrayResize</span><span class="token punctuation">(</span>values<span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 在“日志”中显示事件值</span>
+      <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">;</span>      
+     <span class="token punctuation">}</span>
+   <span class="token keyword">else</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Error! Failed to receive events for country_code=%s&quot;</span><span class="token punctuation">,</span>EU_code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Error code: %d&quot;</span><span class="token punctuation">,</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+<span class="token comment">//---</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">/*
+  结果：
+  已接收的country_code=EU事件值：1384
+        [id] [event_id]           [time]               [period] [revision]   [actual_value] [prev_value] [revised_prev_value] [forecast_value] [impact_type] [reserved]
+   [0] 54215  999500001 2018.01.02 09:00:00 2017.12.01 00:00:00          3       60600000     60600000 -9223372036854775808         60500000             1          0
+   [1] 54221  999500002 2018.01.04 09:00:00 2017.12.01 00:00:00          3       56600000     56500000 -9223372036854775808         56000000             1          0
+   [2] 54222  999500003 2018.01.04 09:00:00 2017.12.01 00:00:00          3       58100000     58000000 -9223372036854775808         58400000             2          0
+   [3] 45123  999030005 2018.01.05 10:00:00 2017.11.01 00:00:00          0         600000       400000 -9223372036854775808           100000             1          0
+   [4] 45124  999030006 2018.01.05 10:00:00 2017.11.01 00:00:00          0        2800000      2500000 -9223372036854775808          1500000             1          0
+   [5] 45125  999030012 2018.01.05 10:00:00 2017.12.01 00:00:00          1         900000       900000 -9223372036854775808          1000000             2          0
+   [6] 45126  999030013 2018.01.05 10:00:00 2017.12.01 00:00:00          1        1400000      1500000 -9223372036854775808          1500000             2          0
+   [7] 54953  999520001 2018.01.05 20:30:00 2018.01.02 00:00:00          0      127900000     92100000 -9223372036854775808         76400000             0          0
+   [8] 22230  999040003 2018.01.08 10:00:00 2017.12.01 00:00:00          0        9100000      8200000              8100000          7600000             1          0
+   [9] 22231  999040004 2018.01.08 10:00:00 2017.12.01 00:00:00          0       18400000     16300000             16400000         16800000             1          0   
+*/</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><p>另见</p> <p>CalendarCountries， CalendarEventByCountry， CalendarValueHistoryByEvent， CalendarEventById, CalendarValueById</p> <h2 id="_15-9-calendarvaluelastbyevent"><a href="#_15-9-calendarvaluelastbyevent" class="header-anchor">#</a> 15.9 CalendarValueLastByEvent</h2> <p>通过指定change_id，从日历数据库状态根据ID获得事件值数组。</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token keyword">int</span>  <span class="token function">CalendarValueLastByEvent</span><span class="token punctuation">(</span>
+   ulong                event_id<span class="token punctuation">,</span>      <span class="token comment">// 事件ID </span>
+   ulong<span class="token operator">&amp;</span>               change_id<span class="token punctuation">,</span>     <span class="token comment">// 事件值ID </span>
+   MqlCalendarValue<span class="token operator">&amp;</span>    values<span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token comment">// 值描述数组</span>
+   <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>参数</p> <p>event_id</p> <p>[in]  事件ID。</p> <p>change_id</p> <p>[in][out]  更改ID。</p> <p>values[]</p> <p>[out] MqlCalendarValue类型数组，用于接收事件值。</p> <p>返回值</p> <p>接收事件值的数量。若要获得有关错误的信息，请调用GetLastError()函数。可能错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>4001 – ERR_INTERNAL_ERROR（一般运行时错误）。
+4004 – ERR_NOT_ENOUGH_MEMORY（内存不足，无法执行请求）。
+5401 – ERR_CALENDAR_TIMEOUT（超过请求时限）。
+5400 – ERR_CALENDAR_MORE_DATA（数组大小不足以接收所有值的描述，只可以接收那些适合的值）。
+执行 ArrayResize()失败的错误
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>注意</p> <p>所有用于经济日历的函数都使用交易服务器时间(TimeTradeServer)。这意味着MqlCalendarValue结构中的时间和CalendarValueHistoryByEvent/CalendarValueHistory函数中输入的时间都在交易服务器时区中设置，而不是在用户本地时间设置。</p> <p>如果固定长度的events[]数组被传递到函数且没有足够空间保存整个结果，则会激活ERR_CALENDAR_MORE_DATA (5400)错误。</p> <p>如果change_id = 0被传递到该函数，那么该函数会始终返回零值，但当前日历数据库返回到change_id。</p> <p>该函数返回指定新闻的数组和可用于函数后续调用来接收新闻新值的新change_id。因此，可以通过最后已知的change_id调用这个函数来更新指定新闻的值。</p> <p>MqlCalendarValue结构提供了检查和设置actual_value、forecast_value、prev_value和revised_prev_value字段值的方法。如果没有指定任何值，则该字段存储LONG_MIN (-9223372036854775808)。</p> <p>请注意，存储在这些字段中的值要乘以100万。这表示当您使用函数CalendarValueById、CalendarValueHistoryByEvent、CalendarValueHistory、CalendarValueLastByEvent、CalendarValueLast接收MqlCalendarValue中的值时，您应该检查该字段值是否等于LONG_MIN；如果在字段中指定一个值，那么您应该将该值除以1,000,000以获得该值。另一种获取该值的方法是使用MqlCalendarValue结构的函数检查和获取值。</p> <p>EA听取非农就业人口报告发布的样本：</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">property</span> <span class="token expression">description </span><span class="token string">&quot;Example of using the CalendarValueLastByEvent function&quot;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">property</span> <span class="token expression">description </span><span class="token string">&quot; for tracking the release of the Nonfarm Payrolls report.&quot;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">property</span> <span class="token expression">description </span><span class="token string">&quot;To achieve this, get the current change ID&quot;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">property</span> <span class="token expression">description </span><span class="token string">&quot; of the Calendar database. Then, use this ID to receive&quot;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">property</span> <span class="token expression">description </span><span class="token string">&quot; only new events via the timer survey&quot;</span></span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| EA交易初始化函数                                                    |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">int</span> <span class="token function">OnInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 创建计时器</span>
+   <span class="token function">EventSetTimer</span><span class="token punctuation">(</span><span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//---</span>
+   <span class="token keyword">return</span><span class="token punctuation">(</span>INIT_SUCCEEDED<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| EA交易去初始化函数                                                   |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnDeinit</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">int</span> reason<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 销毁计时器</span>
+   <span class="token function">EventKillTimer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| EA报价函数                                                         |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnTick</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//---</span>
+ 
+  <span class="token punctuation">}</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| Timer函数                                                         |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnTimer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 日历数据库更改ID</span>
+   <span class="token keyword">static</span> ulong calendar_change_id<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 第一次启动属性</span>
+   <span class="token keyword">static</span> <span class="token keyword">bool</span> first<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 事件ID  </span>
+   <span class="token keyword">static</span> ulong event_id<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 事件名称  </span>
+   <span class="token keyword">static</span> string event_name<span class="token operator">=</span><span class="token constant">NULL</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 事件值数组</span>
+   MqlCalendarValue values<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 执行初始化 - 获得当前calendar_change_id</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>first<span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      MqlCalendarEvent events<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 美国国家代码(ISO 3166-1 Alpha-2) </span>
+      string USA_code<span class="token operator">=</span><span class="token string">&quot;US&quot;</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 获得美国事件</span>
+      <span class="token keyword">int</span> events_count<span class="token operator">=</span><span class="token function">CalendarEventByCountry</span><span class="token punctuation">(</span>USA_code<span class="token punctuation">,</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 'events'数组中必要事件的位置</span>
+      <span class="token keyword">int</span> event_pos<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 在“日志”中显示美国事件</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>events_count<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+         <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: USA events: %d&quot;</span><span class="token punctuation">,</span>__FUNCTION__<span class="token punctuation">,</span>events_count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>events_count<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+           <span class="token punctuation">{</span>
+            string event_name_low<span class="token operator">=</span>events<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+            <span class="token comment">//--- 将事件名称更改为小写            </span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">StringToLower</span><span class="token punctuation">(</span>event_name_low<span class="token punctuation">)</span><span class="token punctuation">)</span>
+              <span class="token punctuation">{</span>
+               <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;StringToLower() returned %d error&quot;</span><span class="token punctuation">,</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+               <span class="token comment">//--- 提前退出函数</span>
+               <span class="token keyword">return</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span>
+            <span class="token comment">//--- 寻找“非农就业人口”事件            </span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">StringFind</span><span class="token punctuation">(</span>event_name_low<span class="token punctuation">,</span><span class="token string">&quot;nonfarm payrolls&quot;</span><span class="token punctuation">)</span><span class="token operator">!=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+              <span class="token punctuation">{</span>
+               <span class="token comment">//--- 事件已找到，请记住其ID</span>
+               event_id<span class="token operator">=</span>events<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token punctuation">;</span>
+               <span class="token comment">//--- 书写“非农就业人口”事件名称</span>
+               event_name<span class="token operator">=</span>events<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+               <span class="token comment">//--- 记住'events[]'数组中事件的位置             </span>
+               event_pos<span class="token operator">=</span>i<span class="token punctuation">;</span>
+               <span class="token comment">//--- 请记住，该“日历”中包含多个名称中有“非农就业人口”的事件</span>
+               <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Event \&quot;Nonfarm Payrolls\&quot; found: event_id=%d  event_name=%s&quot;</span><span class="token punctuation">,</span>event_id<span class="token punctuation">,</span>event_name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+               <span class="token comment">//--- 通过注释'break'操作符来查看所有事件，以便更好地理解这个示例</span>
+               <span class="token keyword">break</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span>
+           <span class="token punctuation">}</span>
+         <span class="token comment">//--- 通过删除“非农就业人口”之后的事件来减少列表</span>
+         <span class="token function">ArrayRemove</span><span class="token punctuation">(</span>events<span class="token punctuation">,</span>event_pos<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token comment">//--- 将9个事件放在“非农就业人口”之前，以便分析更方便         </span>
+         <span class="token function">ArrayRemove</span><span class="token punctuation">(</span>events<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>event_pos<span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token keyword">else</span>
+        <span class="token punctuation">{</span>
+         <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: CalendarEventByCountry(%s) returned 0 events, error code=%d&quot;</span><span class="token punctuation">,</span>
+                     USA_code<span class="token punctuation">,</span>__FUNCTION__<span class="token punctuation">,</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token comment">//--- 操作完成失败，请在下一次调用计时器时重试        </span>
+         <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+ 
+      <span class="token comment">//--- 获得指定事件的“日历”数据库更改ID   </span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">CalendarValueLastByEvent</span><span class="token punctuation">(</span>event_id<span class="token punctuation">,</span>calendar_change_id<span class="token punctuation">,</span>values<span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+         <span class="token comment">//--- 第一次启动时不可执行这个代码块，但可以添加它</span>
+         <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: Received the Calendar database current ID: change_id=%d&quot;</span><span class="token punctuation">,</span>
+                     __FUNCTION__<span class="token punctuation">,</span>calendar_change_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token comment">//--- 设置该标识并在计时器的下一个事件之前退出</span>
+         first<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>
+         <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token keyword">else</span>
+        <span class="token punctuation">{</span>
+         <span class="token comment">//--- 无法接收数据（对于第一次启动，这是正常的），请检查是否有错误</span>
+         <span class="token keyword">int</span> error_code<span class="token operator">=</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token keyword">if</span><span class="token punctuation">(</span>error_code<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+           <span class="token punctuation">{</span>
+            <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: Received the Calendar database current ID: change_id=%d&quot;</span><span class="token punctuation">,</span>
+                        __FUNCTION__<span class="token punctuation">,</span>calendar_change_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//--- 设置该标识并在计时器的下一个事件之前退出</span>
+            first<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>
+            <span class="token comment">//--- 现在我们有calendar_change_id值</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+           <span class="token punctuation">}</span>
+         <span class="token keyword">else</span>
+           <span class="token punctuation">{</span>
+            <span class="token comment">//--- 并且这确实是一个错误            </span>
+            <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: Failed to get values for event_id=%d&quot;</span><span class="token punctuation">,</span>__FUNCTION__<span class="token punctuation">,</span>event_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;Error code: %d&quot;</span><span class="token punctuation">,</span>error_code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//--- 操作完成失败，请在下一次调用计时器时重试         </span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+           <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+ 
+<span class="token comment">//--- 我们有“日历”更改ID(change_id)的最后知道的值</span>
+   ulong old_change_id<span class="token operator">=</span>calendar_change_id<span class="token punctuation">;</span>
+<span class="token comment">//--- 请检查新的“非农就业人口”事件值</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">CalendarValueLastByEvent</span><span class="token punctuation">(</span>event_id<span class="token punctuation">,</span>calendar_change_id<span class="token punctuation">,</span>values<span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: Received new events for \&quot;%s\&quot;: %d&quot;</span><span class="token punctuation">,</span>
+                  __FUNCTION__<span class="token punctuation">,</span>event_name<span class="token punctuation">,</span><span class="token function">ArraySize</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 在“日志”中显示'value'数组的数据</span>
+      <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 在“日志”中显示之前和新的“日历ID”的值</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: Previous change_id=%d, new change_id=%d&quot;</span><span class="token punctuation">,</span>
+                  __FUNCTION__<span class="token punctuation">,</span>old_change_id<span class="token punctuation">,</span>calendar_change_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/* 
+      编写您将在这里处理“非农就业人口”数据发布的代码
+      */</span>
+     <span class="token punctuation">}</span>
+<span class="token comment">//---     </span>
+  <span class="token punctuation">}</span>
+<span class="token comment">/*
+  结果：
+   OnTimer: USA events: 202
+  Event &quot;Nonfarm Payrolls&quot; found: event_id=840030016  event_name=Nonfarm Payrolls
+            [id] [type] [sector] [frequency] [time_mode] [country_id] [unit] [importance] [multiplier] [digits]          [source_url]                             [event_code]                   [name] [reserved]
+   [0] 840030007      1        4           2           0          840      1            1            0        1 &quot;https://www.bls.gov&quot; &quot;consumer-price-index-yy&quot;                &quot;CPI y/y&quot;                         0
+   [1] 840030008      1        4           2           0          840      1            1            0        1 &quot;https://www.bls.gov&quot; &quot;consumer-price-index-ex-food-energy-yy&quot; &quot;Core CPI y/y&quot;                    0
+   [2] 840030009      1        4           2           0          840      0            1            0        3 &quot;https://www.bls.gov&quot; &quot;consumer-price-index-nsa&quot;               &quot;CPI n.s.a.&quot;                      0
+   [3] 840030010      1        4           2           0          840      0            1            0        3 &quot;https://www.bls.gov&quot; &quot;consumer-price-index-ex-food-energy&quot;    &quot;Core CPI&quot;                        0
+   [4] 840030011      1        4           2           0          840      1            1            0        1 &quot;https://www.bls.gov&quot; &quot;import-price-index-mm&quot;                  &quot;Import Price Index m/m&quot;          0
+   [5] 840030012      1        4           2           0          840      1            1            0        1 &quot;https://www.bls.gov&quot; &quot;import-price-index-yy&quot;                  &quot;Import Price Index y/y&quot;          0
+   [6] 840030013      1        4           2           0          840      1            1            0        1 &quot;https://www.bls.gov&quot; &quot;export-price-index-mm&quot;                  &quot;Export Price Index m/m&quot;          0
+   [7] 840030014      1        4           2           0          840      1            1            0        1 &quot;https://www.bls.gov&quot; &quot;export-price-index-yy&quot;                  &quot;Export Price Index y/y&quot;          0
+   [8] 840030015      1        3           2           0          840      1            2            0        1 &quot;https://www.bls.gov&quot; &quot;unemployment-rate&quot;                      &quot;Unemployment Rate&quot;               0
+   [9] 840030016      1        3           2           0          840      4            3            1        0 &quot;https://www.bls.gov&quot; &quot;nonfarm-payrolls&quot;                       &quot;Nonfarm Payrolls&quot;                0
+   OnTimer: Received the Calendar database current ID: change_id=33986560
+ 
+*/</span>  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br></div></div><p>另见</p> <p>CalendarValueLast， CalendarValueHistory， CalendarValueHistoryByEvent， CalendarValueById</p> <h2 id="_15-10-calendarvaluelast"><a href="#_15-10-calendarvaluelast" class="header-anchor">#</a> 15.10 CalendarValueLast</h2> <p>通过指定change_id和根据国家和/或货币进行排序的能力，从日历数据库状态获得所有事件值数组。</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token keyword">int</span>  <span class="token function">CalendarValueLast</span><span class="token punctuation">(</span>
+   ulong<span class="token operator">&amp;</span>               change_id<span class="token punctuation">,</span>             <span class="token comment">// 更改ID </span>
+   MqlCalendarValue<span class="token operator">&amp;</span>    values<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>              <span class="token comment">// 值描述数组</span>
+   <span class="token keyword">const</span> string         country_code<span class="token operator">=</span><span class="token constant">NULL</span><span class="token punctuation">,</span>     <span class="token comment">// 国家代码名称(ISO 3166-1 alpha-2)</span>
+   <span class="token keyword">const</span> string         currency<span class="token operator">=</span><span class="token constant">NULL</span>          <span class="token comment">// 国家货币代码名称 </span>
+   <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>参数</p> <p>change_id</p> <p>[in][out]  更改ID。</p> <p>values[]</p> <p>[out] MqlCalendarValue类型数组，用于接收事件值。</p> <p>country_code=NULL</p> <p>[in]  国家代码名称(ISO 3166-1 alpha-2)</p> <p>currency=NULL</p> <p>[in]  国家货币代码名称。</p> <p>返回值</p> <p>接收事件值的数量。若要获得有关错误的信息，请调用GetLastError()函数。可能错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>4001 – ERR_INTERNAL_ERROR（一般运行时错误）。
+4004 – ERR_NOT_ENOUGH_MEMORY（内存不足，无法执行请求）。
+5401 – ERR_CALENDAR_TIMEOUT（超过请求时限）。
+5400 – ERR_CALENDAR_MORE_DATA（数组大小不足以接收所有值的描述，只可以接收那些适合的值）。
+执行ArrayResize()失败的错误
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>注意</p> <p>所有用于经济日历的函数都使用交易服务器时间(TimeTradeServer)。这意味着MqlCalendarValue结构中的时间和CalendarValueHistoryByEvent/CalendarValueHistory函数中输入的时间都在交易服务器时区中设置，而不是在用户本地时间设置。</p> <p>如果固定长度的events[]数组被传递到函数且没有足够空间保存整个结果，则会激活ERR_CALENDAR_MORE_DATA (5400)错误。</p> <p>如果change_id = 0被传递到该函数，那么您将获得这个参数日历数据库的当前change_id；该函数返回0</p> <p>对于country_code和currency 过滤器，NULL和&quot;&quot;值是相同的，表示没有过滤器。</p> <p>对于country_code，MqlCalendarCountry结构的code字段，例如应使用 &quot;US&quot;、&quot;RU&quot;或&quot;EU&quot;。</p> <p>对于currency，MqlCalendarCountry结构的currency字段，例如应使用&quot;USD&quot;、&quot;RUB&quot;或&quot;EUR&quot;。</p> <p>过滤器是通过连接使用的，即合理'AND'仅用于选择同时满足两个条件（国家和货币）的事件值</p> <p>该函数返回指定新闻的数组和可用于函数后续调用来接收新闻新值的新change_id。因此，可以通过最后已知的change_id调用这个函数来更新指定新闻的值。</p> <p>MqlCalendarValue结构提供了检查和设置actual_value、forecast_value、prev_value和revised_prev_value字段值的方法。如果没有指定任何值，则该字段存储LONG_MIN (-9223372036854775808)。</p> <p>请注意，存储在这些字段中的值要乘以100万。这表示当您使用函数CalendarValueById、CalendarValueHistoryByEvent、CalendarValueHistory、CalendarValueLastByEvent、CalendarValueLast接收MqlCalendarValue中的值时，您应该检查该字段值是否等于LONG_MIN；如果在字段中指定一个值，那么您应该将该值除以1,000,000以获得该值。另一种获取该值的方法是使用MqlCalendarValue结构的函数检查和获取值。</p> <p>监听经济日历事件的示例EA：</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">property</span> <span class="token expression">description </span><span class="token string">&quot;Example of using the CalendarValueLast function&quot;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">property</span> <span class="token expression">description </span><span class="token string">&quot; to develop the economic calendar events listener.&quot;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">property</span> <span class="token expression">description </span><span class="token string">&quot;To achieve this, get the current change ID&quot;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">property</span> <span class="token expression">description </span><span class="token string">&quot; of the Calendar database. Then, use this ID to receive&quot;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">property</span> <span class="token expression">description </span><span class="token string">&quot; only new events via the timer survey&quot;</span></span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| EA交易初始化函数                                                    |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">int</span> <span class="token function">OnInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 创建计时器</span>
+   <span class="token function">EventSetTimer</span><span class="token punctuation">(</span><span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//---</span>
+   <span class="token keyword">return</span><span class="token punctuation">(</span>INIT_SUCCEEDED<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| EA交易去初始化函数                                                   |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnDeinit</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">int</span> reason<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 销毁计时器</span>
+   <span class="token function">EventKillTimer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| EA报价函数                                                         |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnTick</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//---</span>
+ 
+  <span class="token punctuation">}</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token comment">//| Timer函数                                                         |</span>
+<span class="token comment">//+------------------------------------------------------------------+</span>
+<span class="token keyword">void</span> <span class="token function">OnTimer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+<span class="token comment">//--- 日历数据库更改ID</span>
+   <span class="token keyword">static</span> ulong calendar_change_id<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 第一次启动属性</span>
+   <span class="token keyword">static</span> <span class="token keyword">bool</span> first<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 事件值数组</span>
+   MqlCalendarValue values<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//--- 执行初始化 - 获得当前calendar_change_id</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>first<span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      <span class="token comment">//--- get the Calendar database change ID   </span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">CalendarValueLast</span><span class="token punctuation">(</span>calendar_change_id<span class="token punctuation">,</span>values<span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+         <span class="token comment">//--- 第一次启动时不可执行这个代码块，但可以添加它</span>
+         <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: Received the Calendar database current ID: change_id=%d&quot;</span><span class="token punctuation">,</span>
+                     __FUNCTION__<span class="token punctuation">,</span>calendar_change_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token comment">//--- 设置该标识并在计时器的下一个事件之前退出</span>
+         first<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>
+         <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token keyword">else</span>
+        <span class="token punctuation">{</span>
+         <span class="token comment">//--- 无法接收数据（对于第一次启动，这是正常的），请检查是否有错误</span>
+         <span class="token keyword">int</span> error_code<span class="token operator">=</span><span class="token function">GetLastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token keyword">if</span><span class="token punctuation">(</span>error_code<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+           <span class="token punctuation">{</span>
+            <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: Received the Calendar database current ID: change_id=%d&quot;</span><span class="token punctuation">,</span>
+                        __FUNCTION__<span class="token punctuation">,</span>calendar_change_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//--- 设置该标识并在计时器的下一个事件之前退出</span>
+            first<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>
+            <span class="token comment">//--- 现在我们有calendar_change_id值</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+           <span class="token punctuation">}</span>
+         <span class="token keyword">else</span>
+           <span class="token punctuation">{</span>
+            <span class="token comment">//--- 并且这确实是一个错误            </span>
+            <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: Failed to get events in CalendarValueLast. Error code: %d&quot;</span><span class="token punctuation">,</span>
+                        __FUNCTION__<span class="token punctuation">,</span>error_code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//--- 操作完成失败，请在下一次调用计时器时重新初始化        </span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+           <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+ 
+<span class="token comment">//--- 我们有“日历”更改ID(change_id)的最后知道的值</span>
+   ulong old_change_id<span class="token operator">=</span>calendar_change_id<span class="token punctuation">;</span>
+<span class="token comment">//--- 检查是否有新的“日历”事件</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">CalendarValueLast</span><span class="token punctuation">(</span>calendar_change_id<span class="token punctuation">,</span>values<span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: Received new Calendar events: %d&quot;</span><span class="token punctuation">,</span>
+                  __FUNCTION__<span class="token punctuation">,</span><span class="token function">ArraySize</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 在“日志”中显示'value'数组的数据</span>
+      <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 在“日志”中显示之前和新的“日历ID”的值</span>
+      <span class="token function">PrintFormat</span><span class="token punctuation">(</span><span class="token string">&quot;%s: Previous change_id=%d, new change_id=%d&quot;</span><span class="token punctuation">,</span>
+                  __FUNCTION__<span class="token punctuation">,</span>old_change_id<span class="token punctuation">,</span>calendar_change_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//--- 在“日志”中显示新事件</span>
+      <span class="token function">ArrayPrint</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">/* 
+     编写您将在这里处理所发生事件的代码
+      */</span>
+     <span class="token punctuation">}</span>
+<span class="token comment">//---     </span>
+  <span class="token punctuation">}</span>
+<span class="token comment">/*
+  监听操作示例：
+  OnTimer：已接收的“日历数据库”，当前ID：change_id=33281792
+  OnTimer：已接收的“日历”新事件：1
+        [id] [event_id]              [time]            [period] [revision] [actual_value] [prev_value] [revised_prev_value] [forecast_value] [impact_type] [reserved]
+   [0] 91040   76020013 2019.03.20 15:30:00 1970.01.01 00:00:00          0       -5077000     -1913000 -9223372036854775808         -4077000             2          0
+  OnTimer: Previous change_id=33281792, new change_id=33282048
+        [id] [event_id]              [time]            [period] [revision] [actual_value] [prev_value] [revised_prev_value] [forecast_value] [impact_type] [reserved]
+   [0] 91040   76020013 2019.03.20 15:30:00 1970.01.01 00:00:00          0       -5077000     -1913000 -9223372036854775808         -4077000             2          0
+  OnTimer：已接收的“日历”新事件：1
+        [id] [event_id]              [time]            [period] [revision]       [actual_value] [prev_value] [revised_prev_value] [forecast_value] [impact_type] [reserved]
+   [0] 91041   76020013 2019.03.27 15:30:00 1970.01.01 00:00:00          0 -9223372036854775808     -5077000 -9223372036854775808         -7292000             0          0
+  OnTimer: Previous change_id=33282048, new change_id=33282560
+        [id] [event_id]              [time]            [period] [revision]       [actual_value] [prev_value] [revised_prev_value] [forecast_value] [impact_type] [reserved]
+   [0] 91041   76020013 2019.03.27 15:30:00 1970.01.01 00:00:00          0 -9223372036854775808     -5077000 -9223372036854775808         -7292000             0          0
+ 
+*/</span>  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br></div></div><p>另见</p> <p>CalendarValueLast， CalendarValueHistory， CalendarValueHistoryByEvent， CalendarValueById</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mql5yao/Chapter/fourteen.html" class="prev">
+        14 第十四章 市场信息
+      </a></span> <span class="next"><a href="/mql5yao/Chapter/sixteen.html">
+        16 第十六章 时间序列和指标访问
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mql5yao/assets/js/app.f23448f4.js" defer></script><script src="/mql5yao/assets/js/3.a8269cb7.js" defer></script><script src="/mql5yao/assets/js/28.b5c9f3ea.js" defer></script>
+  </body>
+</html>
