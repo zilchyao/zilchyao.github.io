@@ -14863,8 +14863,8 @@ Error message and password prompt
 <div created="20210613120337082" creator="yao" modified="20211107110657517" modifier="yao" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20210731022828929" creator="yao" modified="20211202131214655" modifier="yao" title="$:/state/sidebar">
-<pre>yes</pre>
+<div created="20210731022828929" creator="yao" modified="20230821082922650" modifier="yao" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div created="20210613115157464" modified="20210613115157464" title="$:/state/tab--1278685686">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Languages</pre>
@@ -14950,8 +14950,8 @@ Error message and password prompt
 <div created="20211205113742204" creator="yao" modified="20230811133505810" modifier="yao" title="$:/state/toc/TableOfContents-II.电脑--118161433">
 <pre>close</pre>
 </div>
-<div created="20211110142633931" creator="yao" modified="20230809132806368" modifier="yao" title="$:/state/toc/TableOfContents-II.电脑-497309061">
-<pre>close</pre>
+<div created="20211110142633931" creator="yao" modified="20230821082232953" modifier="yao" title="$:/state/toc/TableOfContents-II.电脑-497309061">
+<pre>open</pre>
 </div>
 <div created="20220720010842242" creator="yao" modified="20230626092253060" modifier="yao" title="$:/state/toc/TableOfContents-III.GAMES--118161433">
 <pre>close</pre>
@@ -14980,8 +14980,8 @@ Error message and password prompt
 <div created="20230809132942699" creator="yao" modified="20230811133509493" modifier="yao" title="$:/state/toc/TableOfContents-VI.图书--118161433">
 <pre>close</pre>
 </div>
-<div created="20220902114701885" creator="yao" modified="20230809132816676" modifier="yao" title="$:/state/toc/TableOfContents-VI.图书-497309061">
-<pre>open</pre>
+<div created="20220902114701885" creator="yao" modified="20230821082230569" modifier="yao" title="$:/state/toc/TableOfContents-VI.图书-497309061">
+<pre>close</pre>
 </div>
 <div created="20210814010311542" creator="yao" modified="20210814010311542" modifier="yao" title="$:/state/toc/TableOfContents/电脑-0_Windows的正确打开方式-497309061">
 <pre>open</pre>
@@ -15229,7 +15229,7 @@ Error message and password prompt
 <div created="20210614051811825" creator="y" modified="20210614051814891" modifier="ya" title="$:/status/UserName">
 <pre>yao</pre>
 </div>
-<div created="20230817120138196" creator="yao" list="TableOfContents 黄执中说服表达课笔记" modified="20230817120138196" modifier="yao" title="$:/StoryList">
+<div created="20230821082216169" creator="yao" list="TableOfContents 1_VuePress还玩不转了?!" modified="20230821082245778" modifier="yao" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210613115321907" modified="20210613115321907" title="$:/theme">
@@ -16062,7 +16062,7 @@ XBOX ONE 无线手柄 型号 1708
 
 山水功放 UX66</pre>
 </div>
-<div created="20210725015221311" creator="yao" modified="20230703112725855" modifier="yao" tags="VuePress" title="1_VuePress还玩不转了?!">
+<div created="20210725015221311" creator="yao" modified="20230821083629755" modifier="yao" tags="VuePress" title="1_VuePress还玩不转了?!">
 <pre>!!VuePress 还玩不转了?!
 
 想入门都这么劝退的吗？看了好几次 VuePress 的文档，网上搜的文章真是乱，官网写得还真是浓浓的 知识诅咒 的味道，也许高手才看得懂吧。我菜鸡、我菜鸡。
@@ -16332,6 +16332,33 @@ module.exports = {
 [img[./wikipic/computer/vuepress19.png]]
 
 等待这个打包指令完成后，大约几秒到几分钟左右。你会发现在 ` .vuepress ` 中，自动创建了一个文件夹 ` dist ` 。其中有一个 ` index.html `，你可以双击这个文件，看看是不是和第6步运行 vuepress 时呈现的页面是一致的。@@color:yellow;font-size: 18px;如果不一致， 不要纠结，放到服务器上再看效果。不然真的是折磨人到崩溃！！！@@
+
+如果在这个过程中，显示如下错误提示：
+
+`` The code generator has deoptimised the styling of xxxx.js as it exceeds the max of 500kb ``
+
+这表明文件的大小超过了500kb。这个问题是因为 babel 处理文件的大小被限制在了500kb，
+
+```
+// 在项目根目录下查找 .babelrc 或 babel.config.js 文件，
+// 如果没有就创建一个（两者其一即可），
+// 然后在其中书写如下配置：
+
+// .babelrc:
+{
+  "compact":false
+}
+
+// babel.config.js:
+
+module.exports =
+  {
+    compact:false,
+  }
+```
+
+即可解决。
+
 
 可以用 WampSever 在本地模拟一个服务器环境，然后把 ` dist ` 中的文件都放到 ` www ` 下面的文件夹中，再用 浏览器 打开，就可以看到最终效果了，与正式上线服务器应该是完全一致的效果。
 
