@@ -16953,7 +16953,7 @@ $MQMobileNarrow = 419px
 
 </pre>
 </div>
-<div created="20210803034349037" creator="yao" modified="20230918005526517" modifier="yao" tags="VuePress" title="5_VuePress的基本运用">
+<div created="20210803034349037" creator="yao" modified="20230918005025557" modifier="yao" tags="VuePress" title="5_VuePress的基本运用">
 <pre>!!VuePress的基本运用
 
 经过这么一番折腾，总算理顺了一点。其实VuePress很简单，但官网写的啊，真叫一个混乱且矛盾，愁人。一句话，VuePress 就是一个可以把 README.md 文件转换成一个 HTML 页面的工具。这就是它的基本功能。
@@ -17068,11 +17068,7 @@ module.exports = {
 
 最后，当然是写 README.md 了。VuePress 对 Markdown 有一些拓展，其实就是为了写起来更简单，看起来更漂亮点，可以参考以下这个示例：
 
-注意：在 .md 文件中引用图片文件时，路径中的斜杠一定要用 ` / ` 正斜杠，不要用 ` \ ` 反斜杠。在 Windows 系统中都可以，但在 VuePress 中，只能用 ` / ` 正斜杠。切记切记。如果用了 反斜杠，很可能导致页面是一片空白的样子。
-
-* ` ./ ` 表示当前目录文件夹；
-* ` ../` 表示上一层目录文件夹；
-* ` /` 表示根目录；
+注意：在 .md 文件中引用图片文件时，路径中的斜杠一定要用 ` / ` 正斜杠，不要用 ` \ ` 反斜杠。虽然在 Windows 系统中都可以，但在 VuePress 中，只能用 ` / ` 正斜杠。切记切记。如果用了 反斜杠，很可能导致页面是一片空白的样子。
 
 
 ```
@@ -17144,7 +17140,7 @@ https://www.webfx.com/tools/emoji-cheat-sheet/
 
 ## 代码块中的语法高亮
 
-VuePress 使用了 Prism 来为 markdown 中的代码块实现语法高亮。Prism 支持大量的编程语言，你需要做的只是在代码块的开始倒勾中附加一个有效的语言别名：
+VuePress 使用了 Prism (opens new window)来为 markdown 中的代码块实现语法高亮。Prism 支持大量的编程语言，你需要做的只是在代码块的开始倒勾中附加一个有效的语言别名：
 
 ``` js
 export default {
